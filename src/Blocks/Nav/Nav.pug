@@ -1,8 +1,12 @@
 include ../Logo/Logo.pug
 include ../Icons/Icons.pug
+include ../Data/navigationData.pug
 
 mixin NavItem(name)
-	a.Nav__item(href='#',class={"Nav__item_active":name===currentPage})= name
+	if !subMenuCode
+			a.Nav__item(href=href,class={"Nav__item_active":name===currentPage})= title
+	else
+		
 mixin NavSubItem(name)
 	li.Nav__subItem
 		a.Nav__item.Nav__subLink(href='')= name

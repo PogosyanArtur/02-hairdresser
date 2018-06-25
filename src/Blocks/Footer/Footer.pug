@@ -1,7 +1,31 @@
+include ../Icons/Icons
+-
+    let navigationLinks= [
+                            {
+                            title:"Услуги",
+                            href:"#"
+                            },
+                            {
+                            title:"Визаж и макияж",
+                            href:"#"
+                            },
+                            {
+                            title:"Парикмахерские услуги",
+                            href:"#"
+                            },
+                            {
+                            title:"Ногтевой сервис",
+                            href:"#"
+                            },
+                            {
+                            title:"Косметология",
+                            href:"#"
+                            },
+                            ]
 mixin Footer__item(x)
         each item in x
             li.Footer__item
-                a.Footer__text= item
+                a.Footer__link(href=item.href)= item.title
 
 mixin Footer()
         footer.Footer
@@ -10,15 +34,22 @@ mixin Footer()
                     .Footer__card
                         h3.Footer__title НАВИГАЦИЯ
                         ul.Footer__content
-                            +Footer__item(["Услуги","Визаж и макияж","Парикмахерские услуги","Ногтевой сервис","Косметология"])
+                            +Footer__item(navigationLinks)
                     .Footer__card
                         h3.Footer__title РАСПОЛОЖЕНИЕ
                         ul.Footer__content
-                            li.Footer__locItem
-                                a.Footer__locLink
-                                    //- svg.Footer__icon
-                                        //- use(xlink:href='img/sprite.svg#arrow_up')
+                            li.Footer__item
+                                a.Footer__link
+                                    +Icons('time','Icons_black')
                                     span.Footer__text 300 Pennsylvania Ave NW, Washington
+                            li.Footer__item
+                                a.Footer__link(href="tel:+3864022455")
+                                    +Icons('call','Icons_black')
+                                    span.Footer__text Телефон: +386 40 222 455
+                            li.Footer__item
+                                a.Footer__link(href="mailto:example@yandex.ru")
+                                    +Icons('mail','Icons_black')
+                                    span.Footer__text эл. почта: example@yandex.ru
                     .Footer__card
                         h3.Footer__title ВРЕМЯ ОТКРЫТИЯ
                         .Footer__content

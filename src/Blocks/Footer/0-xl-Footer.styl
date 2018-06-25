@@ -8,25 +8,35 @@
     font-family $ff_0
     letter-spacing: 1px
     font-weight 300
+.Footer__content
+    list-style none
+    color $c_black_2
+    font-size 1.4rem
 .Footer__title
     text-transform: uppercase
     font-size 1.7rem    
     color: $c_white 
     padding-bottom: 2rem
-.Footer__content
-    list-style none
-    color $c_black_2
-    font-size 1.4rem
+.Footer__text
+    margin-left 1rem
 .Footer__item
     padding: 0.5rem 0
     cursor pointer
+.Footer__link
+    display flex
+    align-items: center
+    text-decoration: none
+    color inherit
+    &:focus,
+    &:focus svg,
+    &:hover,
+    &:hover svg
+        color $c_main
+        fill $c_main
+
 .Footer__bottom
     text-align: center
     font-size 1.4rem
     padding: 3rem 0
     background-color $c_black_5
     color $c_black_2
-
-
-
-    
