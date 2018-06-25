@@ -1,0 +1,25 @@
+mixin Footer__item(x)
+        each item in x
+            li.Footer__item
+                a.Footer__text= item
+
+mixin Footer()
+        footer.Footer
+            .Container
+                .Footer__top
+                    .Footer__card
+                        h3.Footer__title НАВИГАЦИЯ
+                        ul.Footer__content
+                            +Footer__item(["Услуги","Визаж и макияж","Парикмахерские услуги","Ногтевой сервис","Косметология"])
+                    .Footer__card
+                        h3.Footer__title РАСПОЛОЖЕНИЕ
+                        ul.Footer__content
+                            li.Footer__locItem
+                                a.Footer__locLink
+                                    //- svg.Footer__icon
+                                        //- use(xlink:href='img/sprite.svg#arrow_up')
+                                    span.Footer__text 300 Pennsylvania Ave NW, Washington
+                    .Footer__card
+                        h3.Footer__title ВРЕМЯ ОТКРЫТИЯ
+                        .Footer__content
+            p.Footer__bottom Hairdresser wordpress theme | © 2015 Hairdresser, All rights reserved

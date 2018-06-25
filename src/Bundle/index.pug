@@ -1,0 +1,63 @@
+include ../Blocks/TopLine/TopLine
+include ../Blocks/Nav/Nav
+include ../Blocks/Banner/Banner
+include ../Blocks/Poster/Poster
+include ../Blocks/ServiceBanner/ServiceBanner
+include ../Blocks/Portfolio/Portfolio
+include ../Blocks/Price/Price
+include ../Blocks/Footer/Footer
+
+
+
+- let currentPage = "Главная"
+
+doctype html
+head
+	meta(charset='UTF-8')
+	meta(name='viewport', content='width=device-width, initial-scale=1.0')
+	meta(http-equiv='X-UA-Compatible', content='ie=edge')
+	link(href='https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i', rel='stylesheet')
+	link(href='css/lib.css', rel='stylesheet')
+	link(href='css/desktop-small.css', rel='stylesheet', media='screen and (min-width: 1200px)')
+	link(href='css/tablet-large.css', rel='stylesheet', media='screen and (min-width: 992px) and (max-width: 1199px)')
+	link(href='css/tablet-small.css', rel='stylesheet', media='screen and (min-width: 768px) and (max-width: 991px)')
+	link(href='css/phone-large.css', rel='stylesheet', media='screen and (min-width: 576px) and (max-width: 767px)')
+	link(href='css/phone-small.css', rel='stylesheet', media='screen and (max-width: 575px)')
+	link(rel='shortcut icon', type='image/png', href='img/logo.png')
+	title Салон красоты
+body
+	// Begin TopLine
+	+TopLine('Container')
+	// End TopLine
+	//Begin nav	
+	+Nav()
+	// End nav
+	// Begin Banner
+	+Banner
+	// End Banner
+	// Begin Poster
+	+Poster('С ПОНЕДЕЛЬНИКА ПО СУББОТУ С 8 ДО 17 МЫ ДОСТУПНЫ ДЛЯ ВАС')
+	// End Poster
+	// Begin ServiceBanner
+	+ServiceBanner
+	// End ServiceBanner
+	// Begin Portfolio
+	+Portfolio
+	// End Portfolio
+	// Begin Price
+	+Price
+	// End Price
+	// Begin Poster
+	+Poster('КРАСОТА В ГЛАЗАХ СМОТРЯЩЕГО')
+	// End Poster
+	// Begin Footer
+	+Footer()
+	// End Footer
+
+			
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+	script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js")
+	script(src="js/lib.js")
+	script(src="js/all.js")
+	script
+		|svg4everybody()

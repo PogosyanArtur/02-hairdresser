@@ -1,0 +1,76 @@
+.Banner
+	position relative
+	background-image:url(../img/paisley-patterns-1.png)
+	transition: background 1.5s ease
+	background-repeat: repeat
+	&__stage
+		height 60rem
+		overflow hidden
+		position relative
+	&__imgBox
+		position absolute
+		top 0
+		right -20rem
+		z-index 1
+	&__img
+		height 60rem
+	&__content
+		position absolute
+		left 7%
+		top 20%
+		z-index: 8
+		opacity 0
+		transform: scale(0.85)
+		visibility hidden
+		transition-property opacity,transform
+		transition-duration 0.7s
+		transition-delay 0.4s
+		transition-timing-function: ease-in-out
+	&__title
+		color $c_main
+		display inline-block
+		font-size 6rem
+		font-weight bold
+		text-transform: uppercase
+	&__text
+		padding: 2rem 0
+		display inline-block
+		max-width: 50rem
+		// width: 50rem
+		white-space: pre-wrap
+	&__caption
+		color: $c_black
+		font-size 4rem
+		font-weight bold
+
+.owl-carousel .owl-nav button.owl-next, 
+.owl-carousel .owl-nav button.owl-prev
+	position absolute
+	top 50%
+	font-size: 8rem
+	font-weight: bold
+	transform: translateY(-50%)
+	outline: none
+	&:hover
+		color $c_main
+.owl-carousel .owl-nav button.owl-next
+	right 3rem
+.owl-carousel .owl-nav button.owl-prev
+	left 3rem
+.owl-carousel .owl-item.active .Banner__content
+	opacity 1
+	visibility visible
+	transform: scale(1)
+.owl-item.animated
+	animation-duration: 0.5s
+	animation-timing-function: ease-in-out
+
+	
+
+
+
+
+
+
+
+

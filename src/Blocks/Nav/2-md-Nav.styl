@@ -1,0 +1,44 @@
+@import '0-xl*.styl'
+@import '1-lg*.styl'
+.Nav
+    &__container
+        display block
+        width: 100%
+    &__btnBox
+        height inherit
+        display flex
+        align-items center
+        justify-content flex-end
+    &__btn 
+        display block
+    &__menu
+        position absolute
+        display block
+        background-color $c_black
+        padding 2rem 
+        width: 100%
+        z-index 10 
+    &__item
+        display block
+        background-color transparent
+        color $c_white
+    &__sub
+        display block
+    &__subBtnIcon
+        fill $c_white
+        &_active
+            opacity 1
+    &__subContent
+        display block
+        position static
+        list-style inside disc
+        padding 0
+        color $c_white
+    &__subLink
+        padding 0.7rem 4rem 0.7rem 3rem
+        display list-item
+        &_active,
+        &:hover,
+        &:active
+            background-color transparent
+            color $c_main

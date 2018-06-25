@@ -1,0 +1,35 @@
+- 
+	let bannerContent = [
+							{	
+								src:'../img/woman6.png',
+								title : 'Побалуйте себя',
+								caption: 'С нашей интенсивной обработкой',
+								text:'Салоны красоты – это оазис прекрасного среди повседневных забот и суеты, а также наслаждение от приятных'
+							},
+							{	
+								src:'../img/woman7.png',
+								title : 'Быть красивой легко',
+								caption: 'Начни с прически',
+								text:'Салоны красоты – это оазис прекрасного среди повседневных забот и суеты, а также наслаждение от приятных'
+							},
+							{	
+								src:'../img/woman11.png',
+								title : 'Побалуйте себя',
+								caption: 'С нашей интенсивной обработкой',
+								text:'Салоны красоты – это оазис прекрасного среди повседневных забот и суеты, а также наслаждение от приятных'
+							},
+						]
+mixin Banner__stage(x) 
+	div.Banner__stage
+		.Banner__imgBox
+			img.Banner__img(src=" "+ x.src)
+		.Banner__content
+			span.Banner__title= x.title
+			br
+			span.Banner__caption= x.caption
+			br
+			span.Banner__text= x.text
+mixin Banner
+	section.Banner.owl-carousel
+		each x in bannerContent
+			+Banner__stage(x)

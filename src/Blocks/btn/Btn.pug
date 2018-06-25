@@ -1,0 +1,7 @@
+mixin btn(text,ClassName,href)
+    if arguments[2]
+        a(class='btn '+ ClassName href=href)= text       
+    else
+     button(class='btn '+ ClassName)= text
+        
+        

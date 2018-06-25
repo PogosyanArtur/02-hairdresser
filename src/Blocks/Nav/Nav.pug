@@ -1,0 +1,34 @@
+include ../Logo/Logo.pug
+include ../Icons/Icons.pug
+
+mixin NavItem(name)
+	a.Nav__item(href='#',class={"Nav__item_active":name===currentPage})= name
+mixin NavSubItem(name)
+	li.Nav__subItem
+		a.Nav__item.Nav__subLink(href='')= name
+mixin NavSub(btnName,...NavSubItems)
+	div.Nav__sub
+		button.Nav__item.Nav__subBtn
+			span= btnName
+			span
+				svg.Nav__subBtnIcon.Nav__subBtnIconUp
+					use(xlink:href='img/sprite.svg#arrow_up')
+				svg.Nav__subBtnIcon.Nav__subBtnIconDown
+					use(xlink:href='img/sprite.svg#arrow_down ')
+		ul.Nav__subContent
+			each item in NavSubItems
+				+NavSubItem(item)
+mixin Nav(c='')
+	nav(class="Nav "+ c)
+		.Nav__container
+			.Nav__box
+				+Logo()
+				.Nav__btnBox
+					button.Nav__btn
+						+Icons('menu','Icons_light')
+			div.Nav__menu
+				+NavItem("Главная")
+				+NavItem("Наш опыт")
+				+NavSub("Услуги","Визаж и макияж","Парикмахерские услуги","Ногтевой сервис","Косметология")
+				each item in ["Галерея","О Нас","Контакты"]
+					+NavItem(item)

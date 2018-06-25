@@ -1,0 +1,38 @@
+include ../Icons/Icons
+-
+	const config = [
+					{
+						href:'#',
+						link:"time",
+						content:'ПН-ВС 8:00 - 21:00'
+					},
+					{
+						href:'tel:+7 999 999-99-99',
+						link:"call",
+						content:'+7 999 999-99-99'
+					},
+					{
+						href:'mailto:info@example.com',
+						link:"mail",
+						content:'info@example.com'
+					}
+				]
+mixin TopLineArrow(pos,link)
+	span.TopLine__arrow(class="TopLine__arrow_"+`${pos}`)
+		span
+			+Icons('arrow_'+`${link}`)
+mixin TopLineItem(x)
+	a.TopLine__item(href=x.href)
+		span.TopLine__icon
+			+Icons(`${x.link}`,'TopLine__icon')
+		span.TopLine__content= x.content
+
+mixin TopLine(c="")
+	section.TopLine
+		.TopLine__container(class=' '+ c)
+			+TopLineArrow('top','down')
+			.TopLine__box
+				.TopLine__flex
+					each val in config
+						+TopLineItem(val)
+					+TopLineArrow('bottom','up')

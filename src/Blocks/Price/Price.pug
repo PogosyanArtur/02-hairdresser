@@ -1,0 +1,35 @@
+include Price.base.pug
+include ../btn/Btn.pug
+
+mixin Price__filter(x)
+        li(class='Price__filter' data-price-filter=x.filter)
+            +btn(x.text,' btn_line',x.href)
+
+mixin Price__item(x)
+        h4(class='Price__item' ) #{x.item}
+
+mixin Price__subItem(x)
+        li(class='Price__subItem' )
+            h4.Price__subItemTitle= x.subItem
+            span.Price__subItemDivider
+            span.Price__subItemPrice= x.price + ' руб.'
+
+
+mixin Price
+        section.Container
+            h2.Title
+                span.Title__text Наши цены
+            ul.Price__filters
+                each filter in Prices
+                        +Price__filter(filter)
+            div.Price__container
+                each filter in Prices
+                    div(class="Price__section" data-price-section= filter.filter)
+                        if filter.items 
+                            each item in filter.items
+                                div.Price__items
+                                    +Price__item(item)
+                                    ul.Price__subItems
+                                        if item.subItems 
+                                            each subItem in item.subItems
+                                                +Price__subItem(subItem)
