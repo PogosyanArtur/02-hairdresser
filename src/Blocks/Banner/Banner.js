@@ -10,7 +10,6 @@ $(document).ready(function () {
     // smartSpeed: 5000,
     autoplayHoverPause: true,
     slideTransition: ``,
-
     onChanged: (e) => {
       let pos = $('.Banner').css("background-position-x")
       pos = Number.parseInt(pos)

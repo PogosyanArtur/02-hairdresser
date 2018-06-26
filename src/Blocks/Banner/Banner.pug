@@ -1,5 +1,5 @@
 - 
-	let bannerContent = [
+	let bannerData = [
 							{	
 								src:'../img/woman6.png',
 								title : 'Побалуйте себя',
@@ -31,5 +31,5 @@ mixin Banner__stage(x)
 			span.Banner__text= x.text
 mixin Banner
 	section.Banner.owl-carousel
-		each x in bannerContent
+		each x in bannerData
 			+Banner__stage(x)

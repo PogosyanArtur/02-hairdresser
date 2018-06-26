@@ -1,6 +1,6 @@
 include ../Icons/Icons
 -
-	const config = [
+	let TopLineData = [
 					{
 						href:'#',
 						link:"time",
@@ -33,6 +33,6 @@ mixin TopLine(c="")
 			+TopLineArrow('top','down')
 			.TopLine__box
 				.TopLine__flex
-					each val in config
-						+TopLineItem(val)
+					each i in TopLineData
+						+TopLineItem(i)
 					+TopLineArrow('bottom','up')
