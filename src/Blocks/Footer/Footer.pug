@@ -1,56 +1,61 @@
 include ../Icons/Icons
--
-    let navigationLinks= [
-                            {
-                            title:"Услуги",
-                            href:"#"
-                            },
-                            {
-                            title:"Визаж и макияж",
-                            href:"#"
-                            },
-                            {
-                            title:"Парикмахерские услуги",
-                            href:"#"
-                            },
-                            {
-                            title:"Ногтевой сервис",
-                            href:"#"
-                            },
-                            {
-                            title:"Косметология",
-                            href:"#"
-                            },
-                        ]
-mixin Footer__item(x)
-        each item in x
-            li.Footer__item
-                a.Footer__link(href=item.href)= item.title
+mixin Footer__item(_x,_y)
+		each item in _x[_y]
+			if !item.subItems
+				li.Footer__item
+					a.Footer__link(href=item.href)= item.title
+			else
+				li.Footer__item
+					a.Footer__link(href=item.href)= item.title
+				each subItem in _x[item.subItems]            
+					li.Footer__item.Footer__item_toRight
+						a.Footer__link(href=subItem.href)= subItem.title
 
 mixin Footer()
-        footer.Footer
-            .Container
-                .Footer__top
-                    .Footer__card
-                        h3.Footer__title НАВИГАЦИЯ
-                        ul.Footer__content
-                            +Footer__item(navigationLinks)
-                    .Footer__card
-                        h3.Footer__title РАСПОЛОЖЕНИЕ
-                        ul.Footer__content
-                            li.Footer__item
-                                a.Footer__link
-                                    +Icons('time','Icons_black')
-                                    span.Footer__text 300 Pennsylvania Ave NW, Washington
-                            li.Footer__item
-                                a.Footer__link(href="tel:+3864022455")
-                                    +Icons('call','Icons_black')
-                                    span.Footer__text Телефон: +386 40 222 455
-                            li.Footer__item
-                                a.Footer__link(href="mailto:example@yandex.ru")
-                                    +Icons('mail','Icons_black')
-                                    span.Footer__text эл. почта: example@yandex.ru
-                    .Footer__card
-                        h3.Footer__title ВРЕМЯ ОТКРЫТИЯ
-                        .Footer__content
-            p.Footer__bottom Hairdresser wordpress theme | © 2015 Hairdresser, All rights reserved
+		footer.Footer
+			.Container
+				.Footer__top
+					.Footer__card
+						h3.Footer__title НАВИГАЦИЯ
+						ul.Footer__content
+							+Footer__item(navItems,'navItems01')
+					.Footer__card
+						h3.Footer__title Контакты
+						ul.Footer__content
+							li.Footer__item
+								a.Footer__link
+									+Icons('location','Icons_black')
+									span.Footer__text 300 Pennsylvania Ave NW, Washington
+							li.Footer__item
+								a.Footer__link(href="tel:+3864022455")
+									+Icons('call','Icons_black')
+									span.Footer__text Телефон: +386 40 222 455
+							li.Footer__item
+								a.Footer__link(href="mailto:example@yandex.ru")
+									+Icons('mail','Icons_black')
+									span.Footer__text эл. почта: example@yandex.ru
+					.Footer__card
+						h3.Footer__title ВРЕМЯ ОТКРЫТИЯ
+						ul.Footer__content
+							li.Footer__item 
+								span.Footer__item_light Понидельник 
+								span 08:00 - 19:00
+							li.Footer__item 
+								span.Footer__item_light Вторник 
+								span 08:00 - 19:00
+							li.Footer__item 
+								span.Footer__item_light Среда 
+								span 08:00 - 19:00
+							li.Footer__item 
+								span.Footer__item_light Четверг 
+								span 08:00 - 19:00
+							li.Footer__item 
+								span.Footer__item_light Пятница 
+								span 08:00 - 19:00
+							li.Footer__item 
+								span.Footer__item_light Суббота 
+								span 08:00 - 19:00
+							li.Footer__item
+								span.Footer__item_light Воскресение 
+								span.Footer__item_close Закрыто
+			p.Footer__bottom  © Copyright 2018, Все права защищены
