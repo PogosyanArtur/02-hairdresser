@@ -2,26 +2,23 @@ include ../Logo/Logo.pug
 include ../Icons/Icons.pug
 include ../Data/navigationData.pug
 
-mixin NavItem(name)
-	if !subMenuCode
-			a.Nav__item(href=href,class={"Nav__item_active":name===currentPage})= title
+mixin NavItem(x)
+	if !x.subItems
+			a.Nav__item(href=x.href,class={"Nav__item_active":name===currentPage})= x.title
 	else
+		div.Nav__sub
+			button.Nav__item.Nav__subBtn
+				span= x.title
+				span
+					svg.Nav__subBtnIcon.Nav__subBtnIconUp
+						use(xlink:href='img/sprite.svg#arrow_up')
+					svg.Nav__subBtnIcon.Nav__subBtnIconDown
+						use(xlink:href='img/sprite.svg#arrow_down ')
+			ul.Nav__subContent
+				each item in navItmes[x.subItems]
+					li.Nav__subItem
+						a.Nav__item.Nav__subLink(href=""+ item.href)= item.title
 		
-mixin NavSubItem(name)
-	li.Nav__subItem
-		a.Nav__item.Nav__subLink(href='')= name
-mixin NavSub(btnName,...NavSubItems)
-	div.Nav__sub
-		button.Nav__item.Nav__subBtn
-			span= btnName
-			span
-				svg.Nav__subBtnIcon.Nav__subBtnIconUp
-					use(xlink:href='img/sprite.svg#arrow_up')
-				svg.Nav__subBtnIcon.Nav__subBtnIconDown
-					use(xlink:href='img/sprite.svg#arrow_down ')
-		ul.Nav__subContent
-			each item in NavSubItems
-				+NavSubItem(item)
 mixin Nav(c='')
 	nav(class="Nav "+ c)
 		.Nav__container
@@ -31,8 +28,5 @@ mixin Nav(c='')
 					button.Nav__btn
 						+Icons('menu','Icons_light')
 			div.Nav__menu
-				+NavItem("Главная")
-				+NavItem("Наш опыт")
-				+NavSub("Услуги","Визаж и макияж","Парикмахерские услуги","Ногтевой сервис","Косметология")
-				each item in ["Галерея","О Нас","Контакты"]
+				each item in navItmes.navItems01
 					+NavItem(item)
