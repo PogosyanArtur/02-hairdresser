@@ -121,6 +121,12 @@ $(document).ready(function () {
   });
 })();
 
+var $grid = $('.grid').isotope({
+  // options...
+  itemSelector: '.grid-item',
+  layoutMode: 'fitRows'
+});
+$grid.isotope({ filter: '.space' });
 var priceFilterButtons = $('.Price__filter .btn_line');
 var priceSections = $('.Price__section');
 var priceSubItems = $('.Price__subItems');

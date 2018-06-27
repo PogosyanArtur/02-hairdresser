@@ -1,0 +1,11 @@
+include ../../Data/pug/PortfolioData
+include ../../ImageCard/pug/ImageCard.pug
+
+mixin PortfolioGallary
+    section.PortfolioGallary
+        .PortfolioGallary__filters
+        .PortfolioGallary__items.grid          
+            each val in PortfolioSlides  
+                +ImageCard(val,' PortfolioGallary__item grid-item')
+
+            

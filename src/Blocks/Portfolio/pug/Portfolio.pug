@@ -1,23 +1,6 @@
-include base
-include ../../btn/pug/Btn.pug
+include ../../Data/pug/PortfolioData
 include ../../Icons/pug/Icons.pug
-
-mixin Portfolio__filters(y)
-    li.Portfolio__filter(data-portfolio-filter=y.group)
-        span.Portfolio__filterText= y.name
-        span.Portfolio__filterIconBox
-            +Icons(y.icon,'Portfolio__filterIcon')
-
-
-mixin Portfolio__item(x)
-    div(class="Portfolio__item " + x.group)
-        .Portfolio__imgBox
-            img(class='Portfolio__img' src=x.src alt=x.alt)
-        div(class="Portfolio__itemOverlay ")
-            .Portfolio__overlayContent
-                h3(class="Portfolio__overlayText")= x.overlayText
-                +btn('Узнать больше','Portfolio__overlayBtn btn_accent',x.href)
-
+include ../../ImageCard/pug/ImageCard.pug
 
 
 mixin Portfolio
@@ -26,10 +9,13 @@ mixin Portfolio
             h2.Portfolio__title Наш опыт 
             ul.Portfolio__filters
                 each val in Portfoliofilters
-                    +Portfolio__filters(val)
+                    li.Portfolio__filter(data-portfolio-filter=val.group)
+                        span.Portfolio__filterText= val.name
+                        span.Portfolio__filterIconBox
+                            +Icons(val.icon,'Portfolio__filterIcon')
         div.Portfolio__slides.Container
             each val in PortfolioSlides  
-                +Portfolio__item(val)
+                +ImageCard(val,' Portfolio__item')
         div.Portfolio__navBox.Container
             div
                 button.Portfolio__arrow.Portfolio__arrowPrev

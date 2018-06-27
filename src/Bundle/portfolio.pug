@@ -3,6 +3,7 @@ include ../Blocks/Nav/pug/Nav
 include ../Blocks/Banner/pug/Banner
 include ../Blocks/Breadcrumb/pug/Breadcrumb
 include ../Blocks/PageHeading/pug/PageHeading
+include ../Blocks/PortfolioGallary/pug/PortfolioGallary
 include ../Blocks/Footer/pug/Footer
 
 
@@ -28,7 +29,7 @@ body
 	+TopLine('Container')
 	// End TopLine
 	//Begin nav	
-	+Nav()
+	+Nav
 	// End nav
 	//Begin PageHeading
 	+PageHeading("Наш опыт")
@@ -36,12 +37,15 @@ body
 	//Begin Breadcrumb
 	+Breadcrumb("Наш опыт","BredcrumbForPortfolio")
 	// End Breadcrumb
+	//Begin PortfolioGallary
+	+PortfolioGallary
+	// End PortfolioGallary
 	//Begin Footer
-	+Footer()
+	+Footer
 	// End Footer
 
 
-			
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 	script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
 	script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js")
 	script(src="js/lib.js")
