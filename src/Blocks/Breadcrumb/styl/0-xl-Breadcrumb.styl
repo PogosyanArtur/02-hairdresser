@@ -1,0 +1,23 @@
+$Breadcrumb-pt = 2em
+
+.Breadcrumb
+    padding-top: $Breadcrumb-pt
+    padding-bottom: $Breadcrumb-pt
+    border-bottom: 1px solid $c_black_3
+    font-family $ff_0
+    font-size 1.5rem
+.Breadcrumb__item
+    font-family inherit 
+    text-decoration: none 
+    color $c_main
+    cursor: pointer
+.Breadcrumb__item_active
+    color $c_black_2
+    cursor: default
+ 
+.Breadcrumb__item + .Breadcrumb__item
+    padding-left: 2rem
+.Breadcrumb__item + .Breadcrumb__item::before
+    content: ">"
+    padding-right: 2rem
+    font-family $ff_0
