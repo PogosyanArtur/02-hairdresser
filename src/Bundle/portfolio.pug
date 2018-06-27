@@ -1,6 +1,7 @@
-include ../Blocks/TopLine/TopLine
-include ../Blocks/Nav/Nav
-include ../Blocks/Footer/Footer
+include ../Blocks/TopLine/pug/TopLine
+include ../Blocks/Nav/pug/Nav
+include ../Blocks/Banner/pug/Banner
+include ../Blocks/Footer/pug/Footer
 
 
 
@@ -27,10 +28,13 @@ body
 	//Begin nav	
 	+Nav()
 	// End nav
-	// Begin Banner
-
+	//Begin Footer
+	+Banner()
+	// End Footer
+	//Begin Footer
 	+Footer()
 	// End Footer
+
 
 			
 	script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")

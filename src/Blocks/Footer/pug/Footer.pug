@@ -1,13 +1,13 @@
-include ../Icons/Icons
-mixin Footer__item(_x,_y)
-		each item in _x[_y]
+include ../../Icons/pug/Icons
+mixin Footer__item(_x)
+		each item in _x
 			if !item.subItems
 				li.Footer__item
 					a.Footer__link(href=item.href)= item.title
 			else
 				li.Footer__item
 					a.Footer__link(href=item.href)= item.title
-				each subItem in _x[item.subItems]            
+				each subItem in item.subItems            
 					li.Footer__item.Footer__item_toRight
 						a.Footer__link(href=subItem.href)= subItem.title
 
@@ -18,7 +18,7 @@ mixin Footer()
 					.Footer__card
 						h3.Footer__title НАВИГАЦИЯ
 						ul.Footer__content
-							+Footer__item(navItems,'navItems01')
+							+Footer__item(navData.navItems)
 					.Footer__card
 						h3.Footer__title Контакты
 						ul.Footer__content

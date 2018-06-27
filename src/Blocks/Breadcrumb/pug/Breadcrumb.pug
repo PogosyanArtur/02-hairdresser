@@ -1,0 +1,6 @@
+include ../Breadcrumb/Breadcrumb
+
+mixin Breadcrumb(x,y)
+	nav.Breadcrumb
+		a.Breadcrumb__item(href=x.href)= x.title
+		a.Breadcrumb__item.Breadcrumb__item_active(href=y.href)= y.title

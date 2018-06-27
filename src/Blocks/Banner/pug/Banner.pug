@@ -1,0 +1,16 @@
+include BannerData.pug
+
+mixin Banner__stage(x) 
+	div.Banner__stage
+		.Banner__imgBox
+			img.Banner__img(src=" "+ x.src)
+		.Banner__content
+			span.Banner__title= x.title
+			br
+			span.Banner__caption= x.caption
+			br
+			span.Banner__text= x.text
+mixin Banner
+	section.Banner.owl-carousel
+		each x in bannerData
+			+Banner__stage(x)

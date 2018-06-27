@@ -1,15 +1,16 @@
-include ../Blocks/TopLine/TopLine
-include ../Blocks/Nav/Nav
-include ../Blocks/Banner/Banner
-include ../Blocks/Poster/Poster
-include ../Blocks/ServiceBanner/ServiceBanner
-include ../Blocks/Portfolio/Portfolio
-include ../Blocks/Price/Price
-include ../Blocks/Footer/Footer
+include ../Blocks/TopLine/pug/TopLine
+include ../Blocks/Nav/pug/Nav
+include ../Blocks/Banner/pug/Banner
+include ../Blocks/Poster/pug/Poster
+include ../Blocks/ServiceBanner/pug/ServiceBanner
+include ../Blocks/Portfolio/pug/Portfolio
+include ../Blocks/Price/pug/Price
+include ../Blocks/Footer/pug/Footer
 
 
 
 - let currentPage = "Главная"
+
 
 doctype html
 head
@@ -33,7 +34,7 @@ body
 	+Nav()
 	// End nav
 	// Begin Banner
-	+Banner
+	+Banner()
 	// End Banner
 	// Begin Poster
 	+Poster('С ПОНЕДЕЛЬНИКА ПО СУББОТУ С 8 ДО 17 МЫ ДОСТУПНЫ ДЛЯ ВАС')

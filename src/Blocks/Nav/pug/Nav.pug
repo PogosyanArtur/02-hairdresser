@@ -1,6 +1,7 @@
-include ../Logo/Logo.pug
-include ../Icons/Icons.pug
-include ../Data/navigationData.pug
+include ../../Logo/pug/Logo.pug
+include ../../Icons/pug/Icons.pug
+include ../../Data//pug/navigationData.pug
+
 
 mixin NavItem(x)
 	if !x.subItems
@@ -15,7 +16,7 @@ mixin NavItem(x)
 					svg.Nav__subBtnIcon.Nav__subBtnIconDown
 						use(xlink:href='img/sprite.svg#arrow_down ')
 			ul.Nav__subContent
-				each item in navItems[x.subItems]
+				each item in x.subItems
 					li.Nav__subItem
 						a.Nav__item.Nav__subLink(href=""+ item.href)= item.title
 		
@@ -28,5 +29,5 @@ mixin Nav(c='')
 					button.Nav__btn
 						+Icons('menu','Icons_light')
 			div.Nav__menu
-				each item in navItems.navItems01
+				each item in navData.navItems
 					+NavItem(item)
