@@ -1,6 +1,8 @@
 include ../Blocks/TopLine/pug/TopLine
 include ../Blocks/Nav/pug/Nav
 include ../Blocks/Banner/pug/Banner
+include ../Blocks/Breadcrumb/pug/Breadcrumb
+include ../Blocks/PageHeading/pug/PageHeading
 include ../Blocks/Footer/pug/Footer
 
 
@@ -28,9 +30,12 @@ body
 	//Begin nav	
 	+Nav()
 	// End nav
-	//Begin Footer
-	+Banner()
-	// End Footer
+	//Begin PageHeading
+	+PageHeading("Наш опыт")
+	// End PageHeading
+	//Begin Breadcrumb
+	+Breadcrumb("Наш опыт","BredcrumbForPortfolio")
+	// End Breadcrumb
 	//Begin Footer
 	+Footer()
 	// End Footer
