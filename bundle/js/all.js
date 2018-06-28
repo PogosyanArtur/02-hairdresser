@@ -19,7 +19,28 @@ $(document).ready(function () {
     }
   });
 });
-;(function () {
+var $grid = $('.Gallary__items').isotope({
+  // options...
+  itemSelector: '.Gallary__item',
+  layoutMode: 'fitRows',
+  percentPosition: true,
+  masonry: {
+    columnWidth: '.Gallary__item',
+    fitWidth: true
+  },
+  horiz: {
+    verticalAlignment: 1
+  }
+});
+$('.Gallary__filters').on('click', function (e) {
+  var gallaryFilter = $(e.target).data('gallary-filter');
+  console.log(gallaryFilter);
+
+  var gallaryFilterToJqClassName = "." + gallaryFilter;
+  $grid.isotope({
+    filter: gallaryFilterToJqClassName
+  });
+});(function () {
 
   var navSubBtnIconDown = $('.Nav__subBtnIconDown');
   var navSubBtnIconUp = $('.Nav__subBtnIconUp');
@@ -120,27 +141,6 @@ $(document).ready(function () {
     }
   });
 })();
-
-var $grid = $('.PortfolioGallary__items').isotope({
-  // options...
-  itemSelector: '.PortfolioGallary__item',
-  layoutMode: 'fitRows',
-  percentPosition: true,
-  masonry: {
-    columnWidth: '.PortfolioGallary__item',
-    fitWidth: true
-  },
-  horiz: {
-    verticalAlignment: 1
-  }
-});
-$('.PortfolioGallary__filters').on('click', function (e) {
-  var portfoliofilter = $(e.target).data('portfoliofilter');
-  var portfoliofilterConvertToJqClass = "." + portfoliofilter;
-  console.log(portfoliofilter);
-
-  $grid.isotope({ filter: portfoliofilterConvertToJqClass });
-});
 
 var priceFilterButtons = $('.Price__filter .btn_line');
 var priceSections = $('.Price__section');

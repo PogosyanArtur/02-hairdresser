@@ -3,12 +3,12 @@ include ../Blocks/Nav/pug/Nav
 include ../Blocks/Banner/pug/Banner
 include ../Blocks/Breadcrumb/pug/Breadcrumb
 include ../Blocks/PageHeading/pug/PageHeading
-include ../Blocks/PortfolioGallary/pug/PortfolioGallary
+include ../Blocks/Gallary/pug/Gallary
 include ../Blocks/Footer/pug/Footer
 
 
 
-- let currentPage = "Наш опыт"
+- let currentPage = "Галерея"
 
 doctype html
 head
@@ -32,14 +32,14 @@ body
 	+Nav
 	// End nav
 	//Begin PageHeading
-	+PageHeading("Наш опыт")
+	+PageHeading("Галерея")
 	// End PageHeading
 	//Begin Breadcrumb
 	+Breadcrumb("Наш опыт","BredcrumbForPortfolio")
 	// End Breadcrumb
-	//Begin PortfolioGallary
-	+PortfolioGallary
-	// End PortfolioGallary
+	//Begin Gallary
+	+Gallary
+	// End Gallary
 	//Begin Footer
 	+Footer
 	// End Footer

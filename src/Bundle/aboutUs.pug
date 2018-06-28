@@ -1,0 +1,51 @@
+include ../Blocks/TopLine/pug/TopLine
+include ../Blocks/Nav/pug/Nav
+include ../Blocks/Banner/pug/Banner
+include ../Blocks/Breadcrumb/pug/Breadcrumb
+include ../Blocks/PageHeading/pug/PageHeading
+include ../Blocks/Footer/pug/Footer
+
+
+
+- let currentPage = "О Нас"
+
+doctype html
+head
+	meta(charset='UTF-8')
+	meta(name='viewport', content='width=device-width, initial-scale=1.0')
+	meta(http-equiv='X-UA-Compatible', content='ie=edge')
+	link(href='https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i', rel='stylesheet')
+	link(href='css/lib.css', rel='stylesheet')
+	link(href='css/desktop-small.css', rel='stylesheet', media='screen and (min-width: 1200px)')
+	link(href='css/tablet-large.css', rel='stylesheet', media='screen and (min-width: 992px) and (max-width: 1199px)')
+	link(href='css/tablet-small.css', rel='stylesheet', media='screen and (min-width: 768px) and (max-width: 991px)')
+	link(href='css/phone-large.css', rel='stylesheet', media='screen and (min-width: 576px) and (max-width: 767px)')
+	link(href='css/phone-small.css', rel='stylesheet', media='screen and (max-width: 575px)')
+	link(rel='shortcut icon', type='image/png', href='img/logo.png')
+	title Салон красоты
+body
+	// Begin TopLine
+	+TopLine('Container')
+	// End TopLine
+	//Begin nav	
+	+Nav
+	// End nav
+	//Begin PageHeading
+	+PageHeading("О нас")
+	// End PageHeading
+	//Begin Breadcrumb
+	+Breadcrumb("О нас","BredcrumbForAboutUs")
+	// End Breadcrumb
+
+	//Begin Footer
+	+Footer
+	// End Footer
+
+
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+	script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js")
+	script(src="js/lib.js")
+	script(src="js/all.js")
+	script
+		|svg4everybody()

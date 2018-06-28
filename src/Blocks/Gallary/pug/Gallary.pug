@@ -1,0 +1,15 @@
+include ../../Data/pug/PortfolioData
+include ../../ImageCard/pug/ImageCard.pug
+
+mixin Gallary
+    section.Gallary.Container
+        ul.Gallary__filters
+            li.Gallary__filter
+                +Icons("filter",'Icons_black Icons_small')
+            each val in Portfoliofilters
+                li.Gallary__filter(data-gallary-filter= val.group)= val.name
+        .Gallary__items          
+            each val in PortfolioSlides  
+                +ImageCard(val,' Gallary__item')
+
+            
