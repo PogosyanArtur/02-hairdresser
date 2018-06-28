@@ -121,12 +121,27 @@ $(document).ready(function () {
   });
 })();
 
-var $grid = $('.grid').isotope({
+var $grid = $('.PortfolioGallary__items').isotope({
   // options...
-  itemSelector: '.grid-item',
-  layoutMode: 'fitRows'
+  itemSelector: '.PortfolioGallary__item',
+  layoutMode: 'fitRows',
+  percentPosition: true,
+  masonry: {
+    columnWidth: '.PortfolioGallary__item',
+    fitWidth: true
+  },
+  horiz: {
+    verticalAlignment: 1
+  }
 });
-$grid.isotope({ filter: '.space' });
+$('.PortfolioGallary__filters').on('click', function (e) {
+  var portfoliofilter = $(e.target).data('portfoliofilter');
+  var portfoliofilterConvertToJqClass = "." + portfoliofilter;
+  console.log(portfoliofilter);
+
+  $grid.isotope({ filter: portfoliofilterConvertToJqClass });
+});
+
 var priceFilterButtons = $('.Price__filter .btn_line');
 var priceSections = $('.Price__section');
 var priceSubItems = $('.Price__subItems');

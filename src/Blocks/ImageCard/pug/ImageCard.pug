@@ -1,9 +1,9 @@
 include ../../btn/pug/Btn.pug
 mixin ImageCard(x,c="")
     div(class="ImageCard__item " + x.group + " "+ c )
-        div(class="ImageCard__imgBox")
+        div.ImageCard__container
             img(class='ImageCard__img' src=x.src alt=x.alt)
-        div(class="ImageCard__overlay ")
-            div(class="ImageCard__overlayContent")
-                h3(class="ImageCard__overlayText")= x.overlayText
-                +btn('Узнать больше','ImageCard__overlayBtn btn_accent',x.href)
+            div(class="ImageCard__overlay ")
+                div(class="ImageCard__overlayContent")
+                    h3(class="ImageCard__overlayText")= x.overlayText
+                    +btn('Узнать больше','ImageCard__overlayBtn btn_accent',x.href)

@@ -1,7 +1,8 @@
 include BreadcrumbDate.pug
 
 mixin Breadcrumb(activeTitle,y)
-	nav.Breadcrumb.Container
-		each i in BreadcrumbData[y]
-			a.Breadcrumb__item(href=i.href)= i.title
-		span.Breadcrumb__item.Breadcrumb__item_active= activeTitle
+	nav.Breadcrumb
+		.Container
+			each i in BreadcrumbData[y]
+				a.Breadcrumb__item(href=i.href)= i.title
+			span.Breadcrumb__item.Breadcrumb__item_active= activeTitle

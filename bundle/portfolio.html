@@ -78,106 +78,239 @@
   </section>
   <!-- End PageHeading-->
   <!--Begin Breadcrumb-->
-  <nav class="Breadcrumb Container"><a class="Breadcrumb__item" href="index.html">Главная</a><span class="Breadcrumb__item Breadcrumb__item_active">Наш опыт</span>
+  <nav class="Breadcrumb">
+    <div class="Container"><a class="Breadcrumb__item" href="index.html">Главная</a><span class="Breadcrumb__item Breadcrumb__item_active">Наш опыт</span>
+    </div>
   </nav>
   <!-- End Breadcrumb-->
   <!--Begin PortfolioGallary-->
-  <section class="PortfolioGallary">
-    <div class="PortfolioGallary__filters"></div>
-    <div class="PortfolioGallary__items grid">         
-      <div class="ImageCard__item space  PortfolioGallary__item grid-item">
-        <div class="ImageCard__imgBox"><img class="ImageCard__img" src="../img/4.jpg" alt="aaaaaa"/></div>
-        <div class="ImageCard__overlay ">
-          <div class="ImageCard__overlayContent">
-            <h3 class="ImageCard__overlayText">Свадебный стиль волос</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+  <section class="PortfolioGallary Container">
+    <ul class="PortfolioGallary__filters">
+      <li class="PortfolioGallary__filter">
+        <svg class="Icons Icons_black Icons_small">
+          <use xlink:href="img/sprite.svg#filter"></use>
+        </svg>
+      </li>
+      <li class="PortfolioGallary__filter" data-portfoliofilter="all">Все</li>
+      <li class="PortfolioGallary__filter" data-portfoliofilter="space">Парикмахерские услуги</li>
+      <li class="PortfolioGallary__filter" data-portfoliofilter="animal">Визаж и макияж</li>
+      <li class="PortfolioGallary__filter" data-portfoliofilter="nature">Ногтевой сервис</li>
+      <li class="PortfolioGallary__filter" data-portfoliofilter="frut">Косметология</li>
+    </ul>
+    <div class="PortfolioGallary__items">         
+      <div class="ImageCard__item space all  PortfolioGallary__item">
+        <div class="ImageCard__container"><img class="ImageCard__img" src="../img/4.jpg" alt="aaaaaa"/>
+          <div class="ImageCard__overlay ">
+            <div class="ImageCard__overlayContent">
+              <h3 class="ImageCard__overlayText">Свадебный стиль волос</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="ImageCard__item space  PortfolioGallary__item grid-item">
-        <div class="ImageCard__imgBox"><img class="ImageCard__img" src="../img/9.jpg" alt="aaaaaa"/></div>
-        <div class="ImageCard__overlay ">
-          <div class="ImageCard__overlayContent">
-            <h3 class="ImageCard__overlayText">Короткие и гламурные</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+      <div class="ImageCard__item space all  PortfolioGallary__item">
+        <div class="ImageCard__container"><img class="ImageCard__img" src="../img/9.jpg" alt="aaaaaa"/>
+          <div class="ImageCard__overlay ">
+            <div class="ImageCard__overlayContent">
+              <h3 class="ImageCard__overlayText">Короткие и гламурные</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="ImageCard__item animal  PortfolioGallary__item grid-item">
-        <div class="ImageCard__imgBox"><img class="ImageCard__img" src="../img/21.jpg" alt="aaaaaa"/></div>
-        <div class="ImageCard__overlay ">
-          <div class="ImageCard__overlayContent">
-            <h3 class="ImageCard__overlayText">Короткие и гламурные</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+      <div class="ImageCard__item animal all  PortfolioGallary__item">
+        <div class="ImageCard__container"><img class="ImageCard__img" src="../img/21.jpg" alt="aaaaaa"/>
+          <div class="ImageCard__overlay ">
+            <div class="ImageCard__overlayContent">
+              <h3 class="ImageCard__overlayText">Короткие и гламурные</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="ImageCard__item animal nature  PortfolioGallary__item grid-item">
-        <div class="ImageCard__imgBox"><img class="ImageCard__img" src="../img/31.jpg" alt="aaaaaa"/></div>
-        <div class="ImageCard__overlay ">
-          <div class="ImageCard__overlayContent">
-            <h3 class="ImageCard__overlayText">Короткие и гламурные</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+      <div class="ImageCard__item animal nature all  PortfolioGallary__item">
+        <div class="ImageCard__container"><img class="ImageCard__img" src="../img/31.jpg" alt="aaaaaa"/>
+          <div class="ImageCard__overlay ">
+            <div class="ImageCard__overlayContent">
+              <h3 class="ImageCard__overlayText">Короткие и гламурные</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="ImageCard__item nature  PortfolioGallary__item grid-item">
-        <div class="ImageCard__imgBox"><img class="ImageCard__img" src="../img/51.jpg" alt="aaaaaa"/></div>
-        <div class="ImageCard__overlay ">
-          <div class="ImageCard__overlayContent">
-            <h3 class="ImageCard__overlayText">Короткие и гламурные</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+      <div class="ImageCard__item nature all  PortfolioGallary__item">
+        <div class="ImageCard__container"><img class="ImageCard__img" src="../img/51.jpg" alt="aaaaaa"/>
+          <div class="ImageCard__overlay ">
+            <div class="ImageCard__overlayContent">
+              <h3 class="ImageCard__overlayText">Короткие и гламурные</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="ImageCard__item nature  PortfolioGallary__item grid-item">
-        <div class="ImageCard__imgBox"><img class="ImageCard__img" src="../img/61.jpg" alt="aaaaaa"/></div>
-        <div class="ImageCard__overlay ">
-          <div class="ImageCard__overlayContent">
-            <h3 class="ImageCard__overlayText">Короткие и гламурные</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+      <div class="ImageCard__item nature all  PortfolioGallary__item">
+        <div class="ImageCard__container"><img class="ImageCard__img" src="../img/61.jpg" alt="aaaaaa"/>
+          <div class="ImageCard__overlay ">
+            <div class="ImageCard__overlayContent">
+              <h3 class="ImageCard__overlayText">Короткие и гламурные</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="ImageCard__item space  PortfolioGallary__item grid-item">
-        <div class="ImageCard__imgBox"><img class="ImageCard__img" src="../img/4.jpg" alt="aaaaaa"/></div>
-        <div class="ImageCard__overlay ">
-          <div class="ImageCard__overlayContent">
-            <h3 class="ImageCard__overlayText">Свадебный стиль волос</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+      <div class="ImageCard__item space all  PortfolioGallary__item">
+        <div class="ImageCard__container"><img class="ImageCard__img" src="../img/4.jpg" alt="aaaaaa"/>
+          <div class="ImageCard__overlay ">
+            <div class="ImageCard__overlayContent">
+              <h3 class="ImageCard__overlayText">Свадебный стиль волос</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="ImageCard__item space  PortfolioGallary__item grid-item">
-        <div class="ImageCard__imgBox"><img class="ImageCard__img" src="../img/9.jpg" alt="aaaaaa"/></div>
-        <div class="ImageCard__overlay ">
-          <div class="ImageCard__overlayContent">
-            <h3 class="ImageCard__overlayText">Свадебный стиль волос</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+      <div class="ImageCard__item space all  PortfolioGallary__item">
+        <div class="ImageCard__container"><img class="ImageCard__img" src="../img/9.jpg" alt="aaaaaa"/>
+          <div class="ImageCard__overlay ">
+            <div class="ImageCard__overlayContent">
+              <h3 class="ImageCard__overlayText">Свадебный стиль волос</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="ImageCard__item animal  PortfolioGallary__item grid-item">
-        <div class="ImageCard__imgBox"><img class="ImageCard__img" src="../img/21.jpg" alt="aaaaaa"/></div>
-        <div class="ImageCard__overlay ">
-          <div class="ImageCard__overlayContent">
-            <h3 class="ImageCard__overlayText">Короткие и гламурные</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+      <div class="ImageCard__item animal all  PortfolioGallary__item">
+        <div class="ImageCard__container"><img class="ImageCard__img" src="../img/21.jpg" alt="aaaaaa"/>
+          <div class="ImageCard__overlay ">
+            <div class="ImageCard__overlayContent">
+              <h3 class="ImageCard__overlayText">Короткие и гламурные</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="ImageCard__item animal nature  PortfolioGallary__item grid-item">
-        <div class="ImageCard__imgBox"><img class="ImageCard__img" src="../img/31.jpg" alt="aaaaaa"/></div>
-        <div class="ImageCard__overlay ">
-          <div class="ImageCard__overlayContent">
-            <h3 class="ImageCard__overlayText">Короткие и гламурные</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+      <div class="ImageCard__item animal nature all  PortfolioGallary__item">
+        <div class="ImageCard__container"><img class="ImageCard__img" src="../img/31.jpg" alt="aaaaaa"/>
+          <div class="ImageCard__overlay ">
+            <div class="ImageCard__overlayContent">
+              <h3 class="ImageCard__overlayText">Короткие и гламурные</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="ImageCard__item nature  PortfolioGallary__item grid-item">
-        <div class="ImageCard__imgBox"><img class="ImageCard__img" src="../img/51.jpg" alt="aaaaaa"/></div>
-        <div class="ImageCard__overlay ">
-          <div class="ImageCard__overlayContent">
-            <h3 class="ImageCard__overlayText">Короткие и гламурные</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+      <div class="ImageCard__item nature all  PortfolioGallary__item">
+        <div class="ImageCard__container"><img class="ImageCard__img" src="../img/51.jpg" alt="aaaaaa"/>
+          <div class="ImageCard__overlay ">
+            <div class="ImageCard__overlayContent">
+              <h3 class="ImageCard__overlayText">Короткие и гламурные</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+            </div>
           </div>
         </div>
       </div>
-      <div class="ImageCard__item frut  PortfolioGallary__item grid-item">
-        <div class="ImageCard__imgBox"><img class="ImageCard__img" src="../img/61.jpg" alt="aaaaaa"/></div>
-        <div class="ImageCard__overlay ">
-          <div class="ImageCard__overlayContent">
-            <h3 class="ImageCard__overlayText">Короткие и гламурные</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+      <div class="ImageCard__item frut all  PortfolioGallary__item">
+        <div class="ImageCard__container"><img class="ImageCard__img" src="../img/61.jpg" alt="aaaaaa"/>
+          <div class="ImageCard__overlay ">
+            <div class="ImageCard__overlayContent">
+              <h3 class="ImageCard__overlayText">Короткие и гламурные</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ImageCard__item space all  PortfolioGallary__item">
+        <div class="ImageCard__container"><img class="ImageCard__img" src="../img/4.jpg" alt="aaaaaa"/>
+          <div class="ImageCard__overlay ">
+            <div class="ImageCard__overlayContent">
+              <h3 class="ImageCard__overlayText">Свадебный стиль волос</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ImageCard__item space all  PortfolioGallary__item">
+        <div class="ImageCard__container"><img class="ImageCard__img" src="../img/9.jpg" alt="aaaaaa"/>
+          <div class="ImageCard__overlay ">
+            <div class="ImageCard__overlayContent">
+              <h3 class="ImageCard__overlayText">Короткие и гламурные</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ImageCard__item animal all  PortfolioGallary__item">
+        <div class="ImageCard__container"><img class="ImageCard__img" src="../img/21.jpg" alt="aaaaaa"/>
+          <div class="ImageCard__overlay ">
+            <div class="ImageCard__overlayContent">
+              <h3 class="ImageCard__overlayText">Короткие и гламурные</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ImageCard__item animal nature all  PortfolioGallary__item">
+        <div class="ImageCard__container"><img class="ImageCard__img" src="../img/31.jpg" alt="aaaaaa"/>
+          <div class="ImageCard__overlay ">
+            <div class="ImageCard__overlayContent">
+              <h3 class="ImageCard__overlayText">Короткие и гламурные</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ImageCard__item nature all  PortfolioGallary__item">
+        <div class="ImageCard__container"><img class="ImageCard__img" src="../img/51.jpg" alt="aaaaaa"/>
+          <div class="ImageCard__overlay ">
+            <div class="ImageCard__overlayContent">
+              <h3 class="ImageCard__overlayText">Короткие и гламурные</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ImageCard__item nature all  PortfolioGallary__item">
+        <div class="ImageCard__container"><img class="ImageCard__img" src="../img/61.jpg" alt="aaaaaa"/>
+          <div class="ImageCard__overlay ">
+            <div class="ImageCard__overlayContent">
+              <h3 class="ImageCard__overlayText">Короткие и гламурные</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ImageCard__item space all  PortfolioGallary__item">
+        <div class="ImageCard__container"><img class="ImageCard__img" src="../img/4.jpg" alt="aaaaaa"/>
+          <div class="ImageCard__overlay ">
+            <div class="ImageCard__overlayContent">
+              <h3 class="ImageCard__overlayText">Свадебный стиль волос</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ImageCard__item space all  PortfolioGallary__item">
+        <div class="ImageCard__container"><img class="ImageCard__img" src="../img/9.jpg" alt="aaaaaa"/>
+          <div class="ImageCard__overlay ">
+            <div class="ImageCard__overlayContent">
+              <h3 class="ImageCard__overlayText">Свадебный стиль волос</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ImageCard__item animal all  PortfolioGallary__item">
+        <div class="ImageCard__container"><img class="ImageCard__img" src="../img/21.jpg" alt="aaaaaa"/>
+          <div class="ImageCard__overlay ">
+            <div class="ImageCard__overlayContent">
+              <h3 class="ImageCard__overlayText">Короткие и гламурные</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ImageCard__item animal nature all  PortfolioGallary__item">
+        <div class="ImageCard__container"><img class="ImageCard__img" src="../img/31.jpg" alt="aaaaaa"/>
+          <div class="ImageCard__overlay ">
+            <div class="ImageCard__overlayContent">
+              <h3 class="ImageCard__overlayText">Короткие и гламурные</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ImageCard__item nature all  PortfolioGallary__item">
+        <div class="ImageCard__container"><img class="ImageCard__img" src="../img/51.jpg" alt="aaaaaa"/>
+          <div class="ImageCard__overlay ">
+            <div class="ImageCard__overlayContent">
+              <h3 class="ImageCard__overlayText">Короткие и гламурные</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ImageCard__item frut all  PortfolioGallary__item">
+        <div class="ImageCard__container"><img class="ImageCard__img" src="../img/61.jpg" alt="aaaaaa"/>
+          <div class="ImageCard__overlay ">
+            <div class="ImageCard__overlayContent">
+              <h3 class="ImageCard__overlayText">Короткие и гламурные</h3><a class="btn ImageCard__overlayBtn btn_accent" href="#">Узнать больше</a>
+            </div>
           </div>
         </div>
       </div>
@@ -207,15 +340,15 @@
           <h3 class="Footer__title">Контакты</h3>
           <ul class="Footer__content">
             <li class="Footer__item"><a class="Footer__link">
-                <svg class="Icons Icons_black">
+                <svg class="Icons Icons_dark">
                   <use xlink:href="img/sprite.svg#location"></use>
                 </svg><span class="Footer__text">300 Pennsylvania Ave NW, Washington</span></a></li>
             <li class="Footer__item"><a class="Footer__link" href="tel:+3864022455">
-                <svg class="Icons Icons_black">
+                <svg class="Icons Icons_dark">
                   <use xlink:href="img/sprite.svg#call"></use>
                 </svg><span class="Footer__text">Телефон: +386 40 222 455</span></a></li>
             <li class="Footer__item"><a class="Footer__link" href="mailto:example@yandex.ru">
-                <svg class="Icons Icons_black">
+                <svg class="Icons Icons_dark">
                   <use xlink:href="img/sprite.svg#mail"></use>
                 </svg><span class="Footer__text">эл. почта: example@yandex.ru</span></a></li>
           </ul>
