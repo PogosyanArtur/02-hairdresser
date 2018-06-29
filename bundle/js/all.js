@@ -99,6 +99,7 @@ $('.Gallary__filters').on('click', function (e) {
   });
   navInit();
 })();
+
 ;
 (function () {
   var slick = $('.Portfolio__slides').slick({

@@ -1,0 +1,24 @@
+include ../../Person/pug/Person
+
+mixin AboutUs 
+    .AboutUs.Container
+        .AboutUs__Contents
+            +AboutUs__Content('../img/b4news.jpg','ИСТОРИЯ КОМПАНИИ','Мы начали парикмахерскую 10 лет назад, с четкой целью быть лучшими в нашем регионе. Наше скромное начало теперь принесло нам быть лучшим салоном когда-либо.')
+            +AboutUs__Content('../img/b1news.jpg','МИССИЯ КОМПАНИИ','Наша миссия состоит в том, чтобы стремиться людей, чтобы принести лучшее из них себя. Мы предлагаем фантастический гламур и лучшее лечение с доступной ценой.')
+        .AboutUs__Persons
+            +Person('../img/t1.jpg','Dona Boss','Владелец и стилист','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis aliquet purus non elementum. Nam quis vulputate enim, congue ullamcorper risus.')
+            +Person('../img/t2.jpg','Yohana Haire','Cтилист','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis aliquet purus non elementum. Nam quis vulputate enim, congue ullamcorper risus.')
+            +Person('../img/t3.jpg','Pamela Red','Парикмахер','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis aliquet purus non elementum. Nam quis vulputate enim, congue ullamcorper risus.')
+
+
+
+
+mixin AboutUs__Content(src,title,text)
+    .AboutUs__Content
+        img.AboutUs__Content-img(src=src, alt="Фотография о нас")
+        h3.AboutUs__Content-title= title
+        p.AboutUs__Content-text= text
+
+
+
+
