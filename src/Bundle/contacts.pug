@@ -2,14 +2,13 @@ include ../Blocks/Page-config/Page-config
 include ../Blocks/TopLine/pug/TopLine
 include ../Blocks/Nav/pug/Nav
 include ../Blocks/Banner/pug/Banner
-include ../Blocks/Breadcrumb/pug/Breadcrumb
-include ../Blocks/PageHeading/pug/PageHeading
+include ../Blocks/Contacts/pug/Contacts
 include ../Blocks/Footer/pug/Footer
-include ../Blocks/AboutUs/pug/AboutUs
 
 
 
-- let currentPage = "О Нас"
+
+- let currentPage = "Контакты"
 
 doctype html
 head
@@ -21,15 +20,9 @@ body
 	//Begin nav	
 	+Nav
 	// End nav
-	//Begin PageHeading
-	+PageHeading(currentPage)
-	// End PageHeading
-	//Begin Breadcrumb
-	+Breadcrumb(currentPage,"BredcrumbForAboutUs")
-	// End Breadcrumb
-	//Begin AboutUs
-	+AboutUs
-	// End AboutUs
+	//Begin Contacts
+	+Contacts
+	// End Contacts
 
 	//Begin Footer
 	+Footer

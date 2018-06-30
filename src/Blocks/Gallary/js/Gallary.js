@@ -13,11 +13,9 @@ var $grid = $('.Gallary__items').isotope({
 });
 $('.Gallary__filters').on('click', (e) => {
   let gallaryFilter = $(e.target).data('gallary-filter');
-  console.log(gallaryFilter);
-  
   let gallaryFilterToJqClassName = "." + gallaryFilter
   $grid.isotope({
     filter: gallaryFilterToJqClassName
   })
-
 })
+

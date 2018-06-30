@@ -19,6 +19,7 @@ $(document).ready(function () {
     }
   });
 });
+
 var $grid = $('.Gallary__items').isotope({
   // options...
   itemSelector: '.Gallary__item',
@@ -34,8 +35,6 @@ var $grid = $('.Gallary__items').isotope({
 });
 $('.Gallary__filters').on('click', function (e) {
   var gallaryFilter = $(e.target).data('gallary-filter');
-  console.log(gallaryFilter);
-
   var gallaryFilterToJqClassName = "." + gallaryFilter;
   $grid.isotope({
     filter: gallaryFilterToJqClassName

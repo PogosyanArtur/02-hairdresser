@@ -1,0 +1,22 @@
+mixin Page-config
+	meta(charset='UTF-8')
+	meta(name='viewport', content='width=device-width, initial-scale=1.0')
+	meta(http-equiv='X-UA-Compatible', content='ie=edge')
+	link(href='https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i', rel='stylesheet')
+	link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet")
+	link(rel='stylesheet', href='css/lib.css')
+	link(rel='stylesheet', media=' (min-width: 1200px)', href='css/desktop-small.css')
+	link(rel='stylesheet', media=' (min-width: 992px) and (max-width: 1199px)', href='css/tablet-large.css',)
+	link(rel='stylesheet', media=' (min-width: 768px) and (max-width: 991px)', href='css/tablet-small.css',)
+	link(rel='stylesheet', media=' (min-width: 576px) and (max-width: 767px)', href='css/phone-large.css',)
+	link(rel='stylesheet', media='(max-width: 575px)', href='css/phone-small.css',) 
+	link(rel='shortcut icon', type='image/png', href='img/logo.png')
+	title Салон красоты
+	
+mixin Page-config__scripts
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+	script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js")
+	script(src="js/lib.js")
+	script(src="js/all.js")
+	script
+		|svg4everybody()
