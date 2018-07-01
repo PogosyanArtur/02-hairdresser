@@ -1,0 +1,42 @@
+include ../Blocks/Page-config/Page-config
+include ../Blocks/TopLine/pug/TopLine
+include ../Blocks/Nav/pug/Nav
+include ../Blocks/Banner/pug/Banner
+include ../Blocks/Breadcrumb/pug/Breadcrumb
+include ../Blocks/PageHeading/pug/PageHeading
+include ../Blocks/Service/pug/Service
+include ../Blocks/Footer/pug/Footer
+include ../Blocks/AboutUs/pug/AboutUs
+
+
+
+- let currentPage = "Услуги"
+
+doctype html
+head
+	+Page-config
+body
+	// Begin TopLine
+	+TopLine('Container')
+	// End TopLine
+
+	//Begin PageHeading
+	+PageHeading(currentPage,'PageHeading_view_with-image')
+        //Begin nav	
+	    +Nav
+	    // End nav
+	// End PageHeading
+	//Begin Service
+	+Service
+	// End PageHeaServiceding
+	//Begin Breadcrumb
+	+Breadcrumb(currentPage,"BredcrumbForAboutUs")
+	// End Breadcrumb
+
+
+	//Begin Footer
+	+Footer
+	// End Footer
+
+
+	+Page-config__scripts

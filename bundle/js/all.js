@@ -79,6 +79,7 @@ $('.Gallary__filters').on('click', function (e) {
   });
 
   $(".Nav__sub").on("click", function (e) {
+
     var t = e.target;
     var target = $(t);
     var navSubContent = target.parents(".Nav__sub").children('.Nav__subContent');

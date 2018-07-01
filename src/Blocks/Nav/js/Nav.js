@@ -41,6 +41,7 @@
 	});
 
 	$(".Nav__sub").on("click", (e) => {
+ 
 		const t = e.target;
 		const target = $(t);
 		let navSubContent = target.parents(".Nav__sub").children('.Nav__subContent')
