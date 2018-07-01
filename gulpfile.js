@@ -37,12 +37,12 @@ const path = {
     // src
 
     src: {
-        styl: './src/Bundle/*.styl',
-        pug: './src/Bundle/*.pug',
-        js: './src/Blocks/**/*.js',
+        styl: './src/Styles/*.styl',
+        pug: './src/Patterns/*.pug',
+        js: './src/**/*.js',
         lib: {
-            css: "src/Bundle/lib.css",
-            js: "./src/Bundle/lib.js",
+            js: "./lib/lib.js",
+            css: "./lib/lib.css",
         },
         svg: "./src/**/svg/*.svg",
         video: './src/**/*.{mp4}',
@@ -52,9 +52,7 @@ const path = {
 
     bundle: {
         css: './bundle/css/',
-        html: { in: './bundle/',
-            out: './bundle/*.html',
-        },
+        html: { in: './bundle/', out: './bundle/*.html',},
         js: './bundle/js/',
         svg: './bundle/img/',
         video: './bundle/video/*.*',
