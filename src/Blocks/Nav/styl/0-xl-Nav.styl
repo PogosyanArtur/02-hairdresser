@@ -1,11 +1,14 @@
 .Nav 
 	background-color: $c_white
     will-change scroll-position
+.Nav_view_ghost
+	background-color: transparent
 .Nav_sticky
 	position fixed
 	top 0
 	width 100%
 	z-index: 150
+	background-color: $c_white
 .Nav__container
 	height 9rem
 	width: 114rem
@@ -83,6 +86,7 @@
 .Nav__subLink
 	display block
 	padding 1rem 5rem 1rem 2rem
+	background-color $c_white
 	&_active,
 	&:hover,
 	&:active
