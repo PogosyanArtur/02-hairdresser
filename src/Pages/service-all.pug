@@ -1,0 +1,10 @@
+extends ../Patterns/main.pug
+
+block var
+	- let currentPage = "Услуги"
+
+block nav
+	+Panel(currentPage)
+block content
+	+Service-menu
+

@@ -11,51 +11,51 @@ mixin Footer__item(_x)
 					li.Footer__item.Footer__item_toRight
 						a.Footer__link(href=subItem.href)= subItem.title
 
-mixin Footer()
-		footer.Footer
-			.Container
-				.Footer__top
-					.Footer__card
-						h3.Footer__title НАВИГАЦИЯ
-						ul.Footer__content
-							+Footer__item(navData.navItems)
-					.Footer__card
-						h3.Footer__title Контакты
-						ul.Footer__content
-							li.Footer__item
-								a.Footer__link(href="contacts.html")
-									+Icons('location','Icons_dark')
-									span.Footer__text 300 Pennsylvania Ave NW, Washington
-							li.Footer__item
-								a.Footer__link(href="tel:+3864022455")
-									+Icons('call','Icons_dark')
-									span.Footer__text Телефон: +386 40 222 455
-							li.Footer__item
-								a.Footer__link(href="mailto:example@yandex.ru")
-									+Icons('mail','Icons_dark')
-									span.Footer__text эл. почта: example@yandex.ru
-					.Footer__card
-						h3.Footer__title ВРЕМЯ ОТКРЫТИЯ
-						ul.Footer__content
-							li.Footer__item 
-								span.Footer__item_light Понидельник 
-								span 08:00 - 19:00
-							li.Footer__item 
-								span.Footer__item_light Вторник 
-								span 08:00 - 19:00
-							li.Footer__item 
-								span.Footer__item_light Среда 
-								span 08:00 - 19:00
-							li.Footer__item 
-								span.Footer__item_light Четверг 
-								span 08:00 - 19:00
-							li.Footer__item 
-								span.Footer__item_light Пятница 
-								span 08:00 - 19:00
-							li.Footer__item 
-								span.Footer__item_light Суббота 
-								span 08:00 - 19:00
-							li.Footer__item
-								span.Footer__item_light Воскресение 
-								span.Footer__item_close Закрыто
-			p.Footer__bottom  © Copyright 2018, Все права защищены
+mixin Footer
+	footer.Footer
+		.Container
+			.Footer__top
+				.Footer__card
+					h3.Footer__title НАВИГАЦИЯ
+					ul.Footer__content
+						+Footer__item(navData.navItems)
+				.Footer__card
+					h3.Footer__title Контакты
+					ul.Footer__content
+						li.Footer__item
+							a.Footer__link(href="contacts.html")
+								+Icons('location','Icons_dark')
+								span.Footer__text 300 Pennsylvania Ave NW, Washington
+						li.Footer__item
+							a.Footer__link(href="tel:+3864022455")
+								+Icons('call','Icons_dark')
+								span.Footer__text Телефон: +386 40 222 455
+						li.Footer__item
+							a.Footer__link(href="mailto:example@yandex.ru")
+								+Icons('mail','Icons_dark')
+								span.Footer__text эл. почта: example@yandex.ru
+				.Footer__card
+					h3.Footer__title ВРЕМЯ ОТКРЫТИЯ
+					ul.Footer__content
+						li.Footer__item 
+							span.Footer__item_light Понидельник 
+							span 08:00 - 19:00
+						li.Footer__item 
+							span.Footer__item_light Вторник 
+							span 08:00 - 19:00
+						li.Footer__item 
+							span.Footer__item_light Среда 
+							span 08:00 - 19:00
+						li.Footer__item 
+							span.Footer__item_light Четверг 
+							span 08:00 - 19:00
+						li.Footer__item 
+							span.Footer__item_light Пятница 
+							span 08:00 - 19:00
+						li.Footer__item 
+							span.Footer__item_light Суббота 
+							span 08:00 - 19:00
+						li.Footer__item
+							span.Footer__item_light Воскресение 
+							span.Footer__item_close Закрыто
+		p.Footer__bottom  © Copyright 2018, Все права защищены
