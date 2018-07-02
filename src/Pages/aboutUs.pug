@@ -1,8 +1,7 @@
-extends ../Patterns/main.pug
+extends ../Patterns/common-02-from-01
 block var
 	- var currentPage = "О Нас"
 block content
-	+PageHeading(currentPage)
 	block content
 		+Breadcrumb(currentPage,"BredcrumbForAboutUs")
 		+AboutUs
