@@ -1,2 +1,45 @@
+.Service-menu
+	list-style none
+	display inline-block
+	margin 0
+	padding 0
 
+.Service-menu__item 
+	padding 0 15px 0 0
+	margin 5px 0
+	background-color $c_black_3
+	border-radius  5px
+	cursor pointer
+	color $c_black_2
+
+.Service-menu__item_active
+	background-color $c_main
+	color $c_white
+
+.Service-menu__item_active .Service-menu__icon
+	fill $c_white
+	
+.Service-menu__item.Service-menu__item_active:hover .Service-menu__link
+	color $c_white
+
+.Service-menu__item.Service-menu__item_active:hover .Service-menu__icon
+	fill $c_white
+
+.Service-menu__item:hover .Service-menu__link,
+.Service-menu__item:focus .Service-menu__link
+	color $c_main
+
+.Service-menu__link
+	text-decoration none
+	color inherit
+	font-size 16px
+	letter-spacing 1px
+	padding 0.8em 1em 0.8em 2em
+	display flex 
+	justify-content space-between
+
+.Service-menu__icon
+	display inline-block
+	margin-left 3em
+	transform rotate(90deg)
 

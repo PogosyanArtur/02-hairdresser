@@ -1,8 +1,8 @@
-mixin Person(src,title,caption,text,c="")
+mixin Person(x, c="")
 	.Person(class="" + c)
 		.Person__Container
-			img.Person__img(src=src)(alt="Фотография "+ title)
-			p.Person__text= text
+			img.Person__img(src=x.src alt="Фотография "+ x.title)
+			p.Person__text= x.text
 		.Person__Content
-			h3.Person__title= title
-			h4.Person__caption= caption
+			h3.Person__title= x.title
+			h4.Person__caption= x.caption

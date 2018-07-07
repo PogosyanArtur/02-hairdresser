@@ -1,3 +1,32 @@
+- 
+    let subItems= [
+                    {
+                        title:"Визаж и макияж",
+                        href:"test.html",
+                    },
+                    {
+                        title:"Парикмахерские услуги",
+                        href:"#",
+                    },
+                    {
+                        title:"Ногтевой сервис",
+                        href:"#",
+                    },
+                    {
+                        title:"Косметология",
+                        href:"#",
+                    },
+                ];
+
+
 mixin Service-menu
-    aside.Service-menu
+    ul.Service-menu
+        li.Service-menu__item.Service-menu__item_active
+            a.Service-menu__link(href="service-all.html") Все услуги
+                +Icons('arrow_up',"Service-menu__icon")
+        each item in subItems
+            li.Service-menu__item
+                a.Service-menu__link(href=item.href)= item.title
+                    +Icons('arrow_up',"Service-menu__icon")
+
             
