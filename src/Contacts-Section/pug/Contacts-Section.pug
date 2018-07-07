@@ -1,0 +1,16 @@
+include ../../Data/pug/ContactsData
+
+mixin Contacts
+    section.Contacts-Section
+        .Contacts-Section__map
+           <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3b06a18a2f1cc5c2770a5d100fdb95b32cd2c6a46b31dd4a47c2119306c7d559&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+        .Contacts-Section__content
+            h3.Contacts-Section__caption Контакты
+            h4.Contacts-Section__label ООО "Парикмахерская"
+            ul.Contacts-Section__list
+                li.Contacts-Section__item 300 Pennsylvania Ave NW, Washington, DC 20006, USA
+                each val in ContactsData
+                    li.Contacts-Section__item
+                        a.Contacts-Section__link(href=val.href)
+                            span.Contacts-Section__legend= val.name + ": "
+                            span.Contacts-Section__info= val.content

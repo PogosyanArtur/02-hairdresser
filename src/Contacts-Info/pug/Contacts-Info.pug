@@ -1,0 +1,14 @@
+mixin Contacts-info(ClassName="")
+	ul.Contacts-info(class= ClassName)
+		li.Contacts-info__Item
+			a.Contacts-info__Link(href="contacts.html")
+				+Icons('location','Icons_dark')
+				span.Contacts-info__Text 300 Pennsylvania Ave NW, Washington
+		li.Contacts-info__Item
+			a.Contacts-info__Link(href="tel:+3864022455")
+				+Icons('call','Icons_dark')
+				span.Contacts-info__Text Телефон: +386 40 222 455
+		li.Contacts-info__Item
+			a.Contacts-info__Link(href="mailto:example@yandex.ru")
+				+Icons('mail','Icons_dark')
+				span.Contacts-info__Text эл. почта: example@yandex.ru
