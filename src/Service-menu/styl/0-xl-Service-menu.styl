@@ -1,10 +1,10 @@
-.Service-menu
+.Service-Menu
 	list-style none
 	display inline-block
 	margin 0
 	padding 0
 
-.Service-menu__item 
+.Service-Menu__item 
 	padding 0 15px 0 0
 	margin 5px 0
 	background-color $c_black_3
@@ -12,24 +12,24 @@
 	cursor pointer
 	color $c_black_2
 
-.Service-menu__item_active
+.Service-Menu__item_active
 	background-color $c_main
 	color $c_white
 
-.Service-menu__item_active .Service-menu__icon
+.Service-Menu__item_active .Service-Menu__icon
 	fill $c_white
 	
-.Service-menu__item.Service-menu__item_active:hover .Service-menu__link
+.Service-Menu__item.Service-Menu__item_active:hover .Service-Menu__link
 	color $c_white
 
-.Service-menu__item.Service-menu__item_active:hover .Service-menu__icon
+.Service-Menu__item.Service-Menu__item_active:hover .Service-Menu__icon
 	fill $c_white
 
-.Service-menu__item:hover .Service-menu__link,
-.Service-menu__item:focus .Service-menu__link
+.Service-Menu__item:hover .Service-Menu__link,
+.Service-Menu__item:focus .Service-Menu__link
 	color $c_main
 
-.Service-menu__link
+.Service-Menu__link
 	text-decoration none
 	color inherit
 	font-size 16px
@@ -37,8 +37,9 @@
 	padding 0.8em 0.5em 0.8em 2em
 	display flex 
 	justify-content space-between
+	white-space nowrap
 
-.Service-menu__icon
+.Service-Menu__icon
 	display inline-block
 	margin-left 2em
 	transform rotate(90deg)

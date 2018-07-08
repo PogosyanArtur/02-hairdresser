@@ -1,0 +1,11 @@
+extends ../Patterns/common-01
+
+block var-01
+	- let currentPage = "Услуги"
+	block var-03
+block nav-01
+	+Panel(currentPage)
+block content-01
+	main.Service-Content__Main.Container
+		+Service-Content__Aside
+		block content-03

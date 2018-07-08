@@ -1,5 +1,3 @@
-//- include ../Card/pug/Card.pug
-
 - 
 	let ServiceBannerInfo = [
 								{
@@ -33,15 +31,15 @@
 						
 							]
 
-mixin ServiceBanner
+mixin Service-Banner
 	section.Container
 		h2.Title
 			span.Title__text Наши услуги
-		div.ServiceBanner
-			.ServiceBanner__itemContainer
+		div.Service-Banner
+			.Service-Banner__itemContainer
 				+Card(ServiceBannerInfo[0])
 				+Card(ServiceBannerInfo[1])
-			.ServiceBanner__itemContainer
+			.Service-Banner__itemContainer
 				+Card(ServiceBannerInfo[2])
 				+Card(ServiceBannerInfo[3])
 				
