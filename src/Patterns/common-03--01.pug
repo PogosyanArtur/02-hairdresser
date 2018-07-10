@@ -1,8 +1,13 @@
 extends ../Patterns/common-01
-
 block var-01
-	- let currentPage = "Услуги"
-	block var-03
+	- let currentSubPageBg
+	case currentSubPage
+		when "Все услуги"
+			- currentSubPageBg = "Panel_view_all"
+		when "Визаж и макияж"
+			- currentSubPageBg = "Panel_view_makeup"
+		when "Ногтевой сервис"
+			- currentSubPageBg = "Panel_view_nailart"
 block nav-01
 	+Panel(currentPage)
 block content-01

@@ -7,6 +7,7 @@ const gulp = require('gulp'),
     watch = require('gulp-watch'),
     plumber = require('gulp-plumber'),
     notify = require("gulp-notify"),
+    rename = require("gulp-rename"),
     // css
     stylus = require('gulp-stylus'),
     csso = require('gulp-csso'),
@@ -52,7 +53,9 @@ const path = {
 
     bundle: {
         css: './bundle/css/',
-        html: { in: './bundle/', out: './bundle/*.html',},
+        html: { in: './bundle/',
+            out: './bundle/*.html',
+        },
         js: './bundle/js/',
         svg: './bundle/img/',
         video: './bundle/video/*.*',
@@ -111,6 +114,7 @@ gulp.task('build:html', function () {
         }))
         .pipe(gulp.dest(path.dist.html));
 });
+
 
 
 ////////////////////////

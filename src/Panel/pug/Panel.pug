@@ -1,8 +1,6 @@
 mixin Panel(title)
-    section.Panel
-        +Nav('Nav_view_ghost')
-        .Container.Panel__Container
-            h2.Panel__Title= title           
-            +Breadcrumb(currentPage,"BredcrumbForAboutUs",'Bredcrumb_view_ghost')
-            
-            
+	section.Panel(class=" "+ currentSubPageBg)
+		+Nav('Nav_view_ghost')
+		.Container.Panel__Container
+			h2.Panel__Title= title
+			+Breadcrumb(currentPage,"BredcrumbForAboutUs",'Bredcrumb_view_ghost')
