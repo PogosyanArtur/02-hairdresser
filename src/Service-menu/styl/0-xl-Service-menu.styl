@@ -6,11 +6,12 @@
 
 .Service-Menu__item 
 	padding 0 15px 0 0
-	margin 5px 0
 	background-color $c_black_3
 	border-radius  5px
 	cursor pointer
 	color $c_black_2
+.Service-Menu__item + .Service-Menu__item 
+	margin 5px 0
 
 .Service-Menu__item_active
 	background-color $c_main
@@ -38,6 +39,7 @@
 	display flex 
 	justify-content space-between
 	white-space nowrap
+
 
 .Service-Menu__icon
 	display inline-block
