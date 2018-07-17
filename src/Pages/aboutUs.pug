@@ -1,7 +1,12 @@
-extends ../Patterns/common-02--01
-block var-01
+extends ../Patterns/common
+
+block var
 	- var currentPage = "О Нас"
-block content-01
-	block content-02
-		+Breadcrumb(currentPage,"BredcrumbForAboutUs")
-		+AboutUs
+block header
+	+TopLine('Container')
+	+Nav
+block main
+	+Breadcrumb(currentPage,"BredcrumbForAboutUs")
+	+AboutUs
+block footer
+	+Footer

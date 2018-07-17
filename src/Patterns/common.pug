@@ -21,7 +21,7 @@ include ../Price/pug/Price
 include ../Panel/pug/Panel
 include ../Service-Menu/pug/Service-Menu
 include ../Service-Content/pug/Service-Content__Aside
-include ../Service-Content/pug/Service-Content__Content-all
+include ../Service-Content/pug/Service-Content__Content
 doctype html
 html
 	head
@@ -39,16 +39,14 @@ html
 		link(rel='shortcut icon', type='image/png', href='img/logo.png')
 		title Салон красоты
 	body
-		block var-01
-		+TopLine('Container')
-		block nav-01
-			+Nav
-		block content-01
-			
-		+Footer
-		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
-		script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js")
-		script(src="js/lib.js")
-		script(src="js/all.js")
-		script
-			|svg4everybody()
+		block var
+		block header
+		block main
+		block footer
+		block scripts
+			script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+			script(src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js")
+			script(src="js/lib.js")
+			script(src="js/all.js")
+			script
+				|svg4everybody()

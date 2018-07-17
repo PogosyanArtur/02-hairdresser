@@ -1,3 +1,11 @@
-extends ../Patterns/common-01
-block content-01
+extends ../Patterns/common
+
+block var
+	- var currentPage = "Контакты"
+block header
+	+TopLine('Container')
+	+Nav
+block main
 	+Contacts
+block footer
+	+Footer

@@ -1,10 +1,15 @@
-extends ../Patterns/common-01
-block var-01
+extends ../Patterns/common
+block var
 	- let currentPage = "Главная"
-block content-01
+block header
+	+TopLine('Container')
+	+Nav
+block main
 	+Banner
 	+Poster('С ПОНЕДЕЛЬНИКА ПО СУББОТУ С 8 ДО 17 МЫ ДОСТУПНЫ ДЛЯ ВАС')
 	+Service-Banner
 	+Portfolio
 	+Price
 	+Poster('КРАСОТА В ГЛАЗАХ СМОТРЯЩЕГО')
+block footer
+	+Footer

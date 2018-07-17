@@ -1,7 +1,13 @@
-extends ../Patterns/common-02--01
-block var-01
+extends ../Patterns/common
+
+block var
 	- var currentPage = "Галерея"	
-block content-01
-	block content-02
-		+Breadcrumb(currentPage,"BredcrumbForPortfolio")
-		+Gallary
+block header
+	+TopLine('Container')
+	+Nav
+block main
+	+PageHeading(currentPage)
+	+Breadcrumb(currentPage,"BredcrumbForPortfolio")
+	+Gallary
+block footer
+	+Footer

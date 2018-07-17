@@ -1,6 +1,13 @@
-extends ../Patterns/common-03--01
-
-block var-03
-	- let currentSubPage = "Визаж и макияж"
-block content-03
-	+Service-Content__Content-all
+extends ../Patterns/common
+block var
+	- let currentPage = "Услуги"
+	- let currentSubPage = "Все услуги"
+block header
+	+TopLine('Container')
+	+Panel(currentPage)
+block main
+	main.Service-Content__Main.Container
+		+Service-Content__Aside
+		+Service-Content__Content
+block footer
+	+Footer

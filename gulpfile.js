@@ -38,7 +38,7 @@ const path = {
 
     src: {
         styl: './src/Styles/*.styl',
-        pug: './src/Pages/*.pug',
+        pug: ['./src/Pages/*.pug','!src/Pages/common.pug'],
         js: './src/**/*.js',
         lib: {
             js: "./lib/lib.js",
