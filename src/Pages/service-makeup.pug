@@ -1,13 +1,13 @@
 extends ../Patterns/common
 block var
 	- let currentPage = "Услуги"
-	- let currentSubPage = "Все услуги"
+	- let currentSubPage = "Визаж и макияж"
 block header
 	+TopLine('Container')
 	+Panel(currentPage)
 block main
-	main.Service-Content__Main.Container
+	main.Service-Content.Container
 		+Service-Content__Aside
-		+Service-Content__Content
+		+Service-Content__Content-makeup
 block footer
 	+Footer
