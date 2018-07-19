@@ -1,0 +1,47 @@
+- let ServiceContentimg1
+- let ServiceContentimg2
+- let ServiceContentimg3
+- let ServiceContentTitle1 
+- let ServiceContentTitle2 
+- let ServiceContentText1 
+- let ServiceContentText2
+- let ServiceContentText3
+- let ServiceContentText4
+
+
+mixin Service-Content--All
+	section.Service-Content.Container
+		+Service-Content__Aside
+		main.Service-Content__Main
+			.Service-Content__Row
+				+Card(ServiceBannerInfo[0])
+				+Card(ServiceBannerInfo[1])
+			.Service-Content__Row
+				+Card(ServiceBannerInfo[2])
+				+Card(ServiceBannerInfo[3])
+
+mixin Service-Content--Services
+	section.Service-Content.Container
+		+Service-Content__Aside
+		main.Service-Content__Main
+			.Service-Content__Row.Service-Content__Img-Box
+				.Service-Content__Column
+					img.Service-Content__Img(src= ServiceContentimg1)
+				.Service-Content__Column
+					img.Service-Content__Img(src= ServiceContentimg2)
+					img.Service-Content__Img(src= ServiceContentimg3)
+			.Service-Content__Row
+				.Service-Content__Column
+					h2.Service-Content__Title= ServiceContentTitle1
+					p.Service-Content__Text= ServiceContentText1 
+					p.Service-Content__Text= ServiceContentText2 
+				.Service-Content__Column
+					h2.Service-Content__Title= ServiceContentTitle2
+					p.Service-Content__Text= ServiceContentText3 
+					p.Service-Content__Text= ServiceContentText4
+
+mixin Service-Content__Aside
+		aside.Service-Content__Aside
+			+Service-Menu('Service-Content__Service-Menu')
+			h2.Service-Content__Title.Service-Content__Title_view_pale Наши Контакты
+			+Contacts-info('Service-Content__Contacts-info')

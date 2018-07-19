@@ -3,12 +3,21 @@ block var
 	- let currentPage = "Услуги"
 	- let currentSubPage = "Визаж и макияж"
 	- let currentSubPageBg = "Panel_view_all"
+	// Service Content
+	
+	-  ServiceContentimg1 = "img/12.jpg"
+	-  ServiceContentimg2 = "img/22.jpg"
+	-  ServiceContentimg3 = "img/33.jpg"
+	-  ServiceContentTitle1 = "ПРОФЕССИОНАЛЬНЫЙ СТИЛЬ"
+	-  ServiceContentTitle2 = "Хорошая команда"
+	-  ServiceContentText1 = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste minus aut harum dolorem fuga esse nobis saepe dolore non debitis officiis quas autem, nemo officia modi laudantium voluptates? Velit, sunt."
+	-  ServiceContentText2 = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste minus aut harum dolorem fuga esse nobis saepe dolore non debitis officiis quas autem, nemo officia modi laudantium voluptates? Velit, sunt."
+	-  ServiceContentText3 = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste minus aut harum dolorem fuga esse nobis saepe dolore non debitis officiis quas autem, nemo officia modi laudantium voluptates? Velit, sunt."
+	-  ServiceContentText4 = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste minus aut harum dolorem fuga esse nobis saepe dolore non debitis officiis quas autem, nemo officia modi laudantium voluptates? Velit, sunt."
 block header
 	+TopLine('Container')
 	+Panel(currentPage)
 block main
-	main.Service-Content.Container
-		+Service-Content__Aside
-		+Service-Content__Content-makeup
+	+Service-Content--Services
 block footer
 	+Footer
