@@ -1,44 +1,16 @@
-- 
- let PersonData= [
-                    {
-                        src:"../img/24-370x360.jpg",
-                        title: "Dona Boss",
-                        caption:"Владелец и стилист",
-                        text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis aliquet purus non elementum. Nam quis vulputate enim, congue ullamcorper risus.",
-                    },
-                    {
-                        src:"../img/25-370x360.jpg",
-                        title: "Yohana Haire",
-                        caption:"Cтилист",
-                        text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis aliquet purus non elementum. Nam quis vulputate enim, congue ullamcorper risus.",
-                    },
-                    {
-                        src:"../img/26-370x360.jpg",
-                        title: "Pamela Red",
-                        caption:"Парикмахер",
-                        text:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mattis aliquet purus non elementum. Nam quis vulputate enim, congue ullamcorper risus.",
-                    },
-                ]
-
-
+include AboutUsDate.pug
 
 mixin AboutUs 
-    .AboutUs.Container
-        .AboutUs__Contents
-            +AboutUs__Content('../img/11-590x363.jpg','ИСТОРИЯ КОМПАНИИ','Мы начали парикмахерскую 10 лет назад, с четкой целью быть лучшими в нашем регионе. Наше скромное начало теперь принесло нам быть лучшим салоном когда-либо.')
-            +AboutUs__Content('../img/7-590x363.jpg','МИССИЯ КОМПАНИИ','Наша миссия состоит в том, чтобы стремиться людей, чтобы принести лучшее из них себя. Мы предлагаем фантастический гламур и лучшее лечение с доступной ценой.')
-        .AboutUs__Persons
-            each person in PersonData
-                +Person(person)
-
-
-
-
-mixin AboutUs__Content(src,title,text)
-    .AboutUs__Content
-        img.AboutUs__Content-img(src=src, alt="Фотография о нас")
-        h3.AboutUs__Content-title= title
-        p.AboutUs__Content-text= text
+	.AboutUs.Container
+		.AboutUs__Contents
+			each val in AboutUsContentDate
+				.AboutUs__Content
+					img.AboutUs__Content-img(src="../img/"+val.src, alt= val.alt)
+					h3.AboutUs__Content-title= val.title
+					p.AboutUs__Content-text= val.text
+		.AboutUs__Persons
+			each person in AboutUsPersonDate
+				+Person(person)
 
 
 

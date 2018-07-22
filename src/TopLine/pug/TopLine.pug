@@ -1,38 +1,19 @@
-//- include ../Icons/pug/Icons
--
-	let TopLineData = [
-					{
-						href:'#',
-						link:"time",
-						content:'ПН-ВС 10:00 - 21:00'
-					},
-					{
-						href:'tel:+74959009797',
-						link:"call",
-						content:'+7 495 900-97-97'
-					},
-					{
-						href:'mailto:info@example.com',
-						link:"mail",
-						content:'info@example.com'
-					}
-				]
+include TopLineData
+
 mixin TopLineArrow(pos,link)
 	span.TopLine__arrow(class="TopLine__arrow_"+`${pos}`)
 		span
 			+Icons('arrow_'+`${link}`)
-mixin TopLineItem(x)
-	a.TopLine__item(href=x.href)
-		span.TopLine__icon
-			+Icons(`${x.link}`,'TopLine__icon')
-		span.TopLine__content= x.content
 
-mixin TopLine(c="")
+mixin TopLine
 	section.TopLine
-		.TopLine__container(class=' '+ c)
+		.TopLine__container.Container
 			+TopLineArrow('top','down')
 			.TopLine__box
 				.TopLine__flex
-					each i in TopLineData
-						+TopLineItem(i)
+					each x in TopLineData
+						a.TopLine__item(href=x.href)
+							span.TopLine__icon
+								+Icons(`${x.link}`,'TopLine__icon')
+							span.TopLine__content= x.content
 					+TopLineArrow('bottom','up')

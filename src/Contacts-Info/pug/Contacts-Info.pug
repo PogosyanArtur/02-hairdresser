@@ -1,14 +1,14 @@
 mixin Contacts-info(ClassName="")
 	ul.Contacts-info(class= ClassName)
 		li.Contacts-info__Item
-			a.Contacts-info__Link(href="contacts.html")
+			a.Contacts-info__Link(href= LinksData['address']['href'])
 				+Icons('location','Icons_dark')
-				span.Contacts-info__Text Город Москва, улица Керамический проезд дом 53 корп.1
+				span.Contacts-info__Text= LinksData['address']['name']
 		li.Contacts-info__Item
-			a.Contacts-info__Link(href="tel:+74959009797")
+			a.Contacts-info__Link(href='tel:' + LinksData['telephons']['office']['href'])
 				+Icons('call','Icons_dark')
-				span.Contacts-info__Text Телефон: +7 495 900 97-97
+				span.Contacts-info__Text="телефон: "+ LinksData['telephons']['office']['name']
 		li.Contacts-info__Item
-			a.Contacts-info__Link(href="mailto:example@yandex.ru")
+			a.Contacts-info__Link(href='mailto:' + LinksData['emails']['href'])
 				+Icons('mail','Icons_dark')
-				span.Contacts-info__Text эл. почта: example@yandex.ru
+				span.Contacts-info__Text= "эл. почта: " + LinksData['emails']['name']

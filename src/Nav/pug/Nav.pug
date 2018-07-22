@@ -1,23 +1,5 @@
-include ../../Data//pug/navigationData.pug
+include NavigationData.pug
 
-
-mixin NavItem(x)
-	if !x.subItems
-			a.Nav__item(href=x.href,class={"Nav__item_active": x.title===currentPage})= x.title
-	else
-		div.Nav__sub
-			button.Nav__item.Nav__subBtn
-				span= x.title
-				span
-					svg.Nav__subBtnIcon.Nav__subBtnIconUp
-						use(xlink:href='img/sprite.svg#arrow_up')
-					svg.Nav__subBtnIcon.Nav__subBtnIconDown
-						use(xlink:href='img/sprite.svg#arrow_down ')
-			ul.Nav__subContent
-				each item in x.subItems
-					li.Nav__subItem
-						a.Nav__item.Nav__subLink(href=""+ item.href)= item.title
-		
 mixin Nav(c='')
 	nav(class="Nav "+ c)
 		.Nav__container
@@ -27,5 +9,19 @@ mixin Nav(c='')
 					button.Nav__btn
 						+Icons('menu','Icons_light')
 			div.Nav__menu
-				each item in navData.navItems
-					+NavItem(item)
+				each x in navData.navItems
+					if !x.subItems
+							a.Nav__item(href=x.href,class={"Nav__item_active": x.title===currentPage})= x.title
+					else
+						div.Nav__sub
+							button.Nav__item.Nav__subBtn
+								span= x.title
+								span
+									svg.Nav__subBtnIcon.Nav__subBtnIconUp
+										use(xlink:href='img/sprite.svg#arrow_up')
+									svg.Nav__subBtnIcon.Nav__subBtnIconDown
+										use(xlink:href='img/sprite.svg#arrow_down ')
+							ul.Nav__subContent
+								each item in x.subItems
+									li.Nav__subItem
+										a.Nav__item.Nav__subLink(href=""+ item.href)= item.title

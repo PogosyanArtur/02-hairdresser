@@ -1,7 +1,4 @@
-include ../../Data/pug/PortfolioData
-//- include ../Icons/pug/Icons.pug
-//- include ../ImageCard/pug/ImageCard.pug
-
+include PortfolioData
 
 mixin Portfolio
     section(class="Portfolio ")
@@ -14,7 +11,7 @@ mixin Portfolio
                         span.Portfolio__filterIconBox
                             +Icons(val.icon,'Portfolio__filterIcon')
         div.Portfolio__slides.Container
-            each val in PortfolioSlides  
+            each val in PortfolioSlides
                 +ImageCard(val,' Portfolio__item')
         div.Portfolio__navBox.Container
             div

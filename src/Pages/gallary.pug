@@ -3,11 +3,11 @@ extends ../Patterns/common
 block var
 	- var currentPage = "Галерея"	
 block header
-	+TopLine('Container')
+	+TopLine
 	+Nav
 block main
 	+PageHeading(currentPage)
-	+Breadcrumb(currentPage,"BredcrumbForPortfolio")
+	+Breadcrumb(currentPage)
 	+Gallary
 block footer
 	+Footer

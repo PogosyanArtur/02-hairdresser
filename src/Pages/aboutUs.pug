@@ -3,10 +3,10 @@ extends ../Patterns/common
 block var
 	- var currentPage = "О Нас"
 block header
-	+TopLine('Container')
+	+TopLine
 	+Nav
 block main
-	+Breadcrumb(currentPage,"BredcrumbForAboutUs")
+	+Breadcrumb(currentPage)
 	+AboutUs
 block footer
 	+Footer

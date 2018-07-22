@@ -1,8 +1,5 @@
-include BreadcrumbDate.pug
-
-mixin Breadcrumb(activeTitle,y,className='')
+mixin Breadcrumb(activeTitle,className='')
 	nav.Breadcrumb(class=" "+className)
 		.Container
-			each i in BreadcrumbData[y]
-				a.Breadcrumb__item(href=i.href)= i.title
+			a.Breadcrumb__item(href= LinksData['pages']['index']['href'])= LinksData['pages']['index']['name']
 			span.Breadcrumb__item.Breadcrumb__item_active= activeTitle

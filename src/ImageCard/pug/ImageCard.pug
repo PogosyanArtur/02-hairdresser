@@ -1,8 +1,7 @@
-//- include ../Btn/pug/Btn.pug
 mixin ImageCard(x,c="")
     div(class="ImageCard__item " + x.group + " "+ c )
         div.ImageCard__container
-            img(class='ImageCard__img' src=x.src alt=x.alt)
+            img(class='ImageCard__img' src="../img/" + x.src alt=x.alt)
             div(class="ImageCard__overlay ")
                 div(class="ImageCard__overlayContent")
                     h3(class="ImageCard__overlayText")= x.overlayText

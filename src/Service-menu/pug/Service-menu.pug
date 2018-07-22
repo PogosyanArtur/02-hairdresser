@@ -1,32 +1,10 @@
-- 
-    let subItems= [
-                    {
-                        title:"Визаж и макияж",
-                        href:"service-makeup.html",
-                    },
-                    {
-                        title:"Парикмахерские услуги",
-                        href:"service-hairStyling.html",
-                    },
-                    {
-                        title:"Ногтевой сервис",
-                        href:"service-nailart.html",
-                    },
-                    {
-                        title:"Косметология",
-                        href:"service-cosmetology.html",
-                    },
-                ];
-
-
+include ServiceMenuData
 mixin Service-Menu(blockClass="")
     ul.Service-Menu(class=" "  + blockClass)
         li.Service-Menu__item(class={'Service-Menu__item_active':'Все услуги'===currentSubPage})
             a.Service-Menu__link(href="service-all.html") Все услуги
                 +Icons('arrow_up',"Service-Menu__icon")
-        each item in subItems
+        each item in ServiceMenuData
             li.Service-Menu__item(class={'Service-Menu__item_active': item.title===currentSubPage})
                 a.Service-Menu__link(href=item.href)= item.title
                     +Icons('arrow_up',"Service-Menu__icon")
-
-            

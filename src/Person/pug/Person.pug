@@ -1,7 +1,7 @@
 mixin Person(x, c="")
 	.Person(class="" + c)
 		.Person__Container
-			img.Person__img(src=x.src alt="Фотография "+ x.title)
+			img.Person__img(src="../img/" + x.src alt=x.alt)
 			p.Person__text= x.text
 		.Person__Content
 			h3.Person__title= x.title

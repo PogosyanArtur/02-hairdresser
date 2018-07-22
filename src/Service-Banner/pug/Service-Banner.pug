@@ -1,35 +1,4 @@
-- 
-	let ServiceBannerInfo = [
-								{
-									src:"../img/7-590x363.jpg",
-									alt:'Привкт',
-									title: 'Парикмахерские услуги',
-									text: 'Красивые, здоровые волосы и отличный стиль является торговой маркой для парикмахера. Профессиональный уход и удивительное внимание к деталям и вашим потребностям определяет нас.',
-									href:'service-hairStyling.html'
-								},
-								{
-									src:"../img/8-590x363.jpg",
-									alt:'Привкт',
-									title: 'Визаж и макияж',
-									text: 'Доступный профессиональный макияж, безусловно, поставит вас на место. Мы рады приветствовать Вас на бесплатный массаж лица, чтобы расслабиться, прежде чем мы заставим вас выделиться.',
-									href:'service-makeup.html'
-								},
-								{
-									src:"../img/9-590x363.jpg",
-									alt:'Привкт',
-									title: 'Ногтевой сервис',
-									text: 'В нашем салоне вы получите полноценное лечение. Профессиональный Нейл-арт с новейшими практиками всех органических материалов сделает ваши ногти основным разговором на любой вечеринке.',
-									href:'service-nailart.html'
-								},
-								{
-									src:"../img/31-590x364.jpg",
-									alt:'Привкт',
-									title: 'Косметология',
-									text: 'Наши еженедельные сообщения в блоге принесут вам свежие советы и трюк о том, как держать вас в идеальном стиле. С нашим богатым опытом смогите достигнуть взгляда от вашего дома.',
-									href:'service-cosmetology.html'
-								},
-						
-							]
+include ServiceBannerData
 
 mixin Service-Banner
 	section.Container
@@ -37,10 +6,10 @@ mixin Service-Banner
 			span.Title__text Наши услуги
 		div.Service-Banner
 			.Service-Banner__itemContainer
-				+Card(ServiceBannerInfo[0])
-				+Card(ServiceBannerInfo[1])
+				+Card(ServiceBannerData[0])
+				+Card(ServiceBannerData[1])
 			.Service-Banner__itemContainer
-				+Card(ServiceBannerInfo[2])
-				+Card(ServiceBannerInfo[3])
+				+Card(ServiceBannerData[2])
+				+Card(ServiceBannerData[3])
 				
 

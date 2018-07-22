@@ -2,7 +2,7 @@ extends ../Patterns/common
 block var
 	- let currentPage = "Главная"
 block header
-	+TopLine('Container')
+	+TopLine
 	+Nav
 block main
 	+Banner
@@ -11,5 +11,6 @@ block main
 	+Portfolio
 	+Price
 	+Poster('КРАСОТА В ГЛАЗАХ СМОТРЯЩЕГО')
+	+Contacts('Contacts-Section__content_hide')
 block footer
 	+Footer

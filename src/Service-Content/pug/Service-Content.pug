@@ -1,28 +1,14 @@
-- 
-	let 
-		ServiceContentData = {
-								'img1': "",
-								'img2': "",
-								'img3': "",
-								'Title1': "",
-								'Title2': "",
-								'Text1': "",
-								'Text2': "",
-								'Text3': "",
-								'Text4': "",
-							}
-
-
+include ServiceContentData
 mixin Service-Content--All
 	section.Service-Content.Container
 		+Service-Content__Aside
 		main.Service-Content__Main
 			.Service-Content__Row
-				+Card(ServiceBannerInfo[0])
-				+Card(ServiceBannerInfo[1])
+				+Card(ServiceBannerData[0])
+				+Card(ServiceBannerData[1])
 			.Service-Content__Row
-				+Card(ServiceBannerInfo[2])
-				+Card(ServiceBannerInfo[3])
+				+Card(ServiceBannerData[2])
+				+Card(ServiceBannerData[3])
 
 mixin Service-Content--Services(x)
 	section.Service-Content.Container
@@ -30,10 +16,10 @@ mixin Service-Content--Services(x)
 		main.Service-Content__Main
 			.Service-Content__Row.Service-Content__Img-Box
 				.Service-Content__Column
-					img.Service-Content__Img(src= x.img1)
+					img.Service-Content__Img(src="img/"+ x.img1)(alt= x.alt1)
 				.Service-Content__Column
-					img.Service-Content__Img(src= x.img2)
-					img.Service-Content__Img(src= x.img3)
+					img.Service-Content__Img(src="img/"+ x.img2)(alt= x.alt2)
+					img.Service-Content__Img(src="img/"+ x.img3)(alt= x.alt3)
 			.Service-Content__Row
 				.Service-Content__Column
 					h2.Service-Content__Title= x.Title1

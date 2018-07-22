@@ -3,23 +3,10 @@ block var
 	- let currentPage = "Визаж и макияж"
 	- let currentSubPage = "Визаж и макияж"
 	- let currentSubPageBg = "Panel_view_makeup"
-	// Service Content
-	- 
-			ServiceContentDataMakeUp = {
-									'img1': "img/8-409x473.jpg",
-									'img2': "img/15-700x377.jpg",
-									'img3': "img/29-360x194.jpg",
-									'Title1': "ИДЕАЛЬНЫЙ МАКИЯЖ",
-									'Title2': "ЛУЧШАЯ ПРАКТИКА",
-									'Text1': "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste minus aut harum dolorem fuga esse nobis saepe dolore non debitis officiis quas autem, nemo officia modi laudantium voluptates? Velit, sunt.",
-									'Text2': "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste minus aut harum dolorem fuga esse nobis saepe dolore non debitis officiis quas autem, nemo officia modi laudantium voluptates? Velit, sunt.",
-									'Text3': "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste minus aut harum dolorem fuga esse nobis saepe dolore non debitis officiis quas autem, nemo officia modi laudantium voluptates? Velit, sunt.",
-									'Text4': "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste minus aut harum dolorem fuga esse nobis saepe dolore non debitis officiis quas autem, nemo officia modi laudantium voluptates? Velit, sunt.",
-								}
 block header
-	+TopLine('Container')
+	+TopLine
 	+Panel(currentPage)
 block main
-	+Service-Content--Services(ServiceContentDataMakeUp)
+	+Service-Content--Services(ServiceContentData['makeUp'])
 block footer
 	+Footer
