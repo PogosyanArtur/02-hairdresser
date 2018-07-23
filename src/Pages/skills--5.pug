@@ -1,13 +1,14 @@
 extends ../Patterns/common
 
 block var
-	- var currentPage = LinksData['pages']['Experience--1']['name']	
+	- var currentPage = LinksData['pages']['skills--5']['name']	
 block header
 	+TopLine
 	+Nav
+
 block main
 	+PageHeading(currentPage)
 	+Breadcrumb(currentPage)
-	//- +Experiance()
+	+Skills(currentPage)
 block footer
 	+Footer

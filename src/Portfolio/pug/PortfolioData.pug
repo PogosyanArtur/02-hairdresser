@@ -10,184 +10,317 @@
 							   
 					{
 						name: "Парикмахерские услуги",
-						group:"space",
+						group:"hair",
 						icon:'scissors'                        
 					},
 							   
 					{
 						name: "Визаж и макияж",
-						group:"animal",
+						group:"makeup",
 						icon:'eyelash_1' 
 					},
 							   
 					{
 						name: "Ногтевой сервис",
-						group:"nature",
+						group:"nail",
 						icon:'fingernail' 
 					},
 					{
 						name: "Косметология",
-						group:"frut",
+						group:"cosmetology",
 						icon:'cosmetology' 
-					},
-			   
+					}
 				]
 -
 	let
 		PortfolioSlides = [
 							{
-								group: 'space all',
+								group: 'makeup all',
 								src:ImagesData['1']['names']['767x511'],
 								alt:ImagesData['1']['alt'],
-								overlayText: LinksData['pages']['Experience--1']['name'],
-								href: LinksData['pages']['Experience--1']['href'],
+								overlayText: LinksData['pages']['skills--1']['name'],
+								href: LinksData['pages']['skills--1']['href'],
+								subPage: {
+									'gallary':[
+											{
+												'name':ImagesData['1']['names']['767x511'],
+												'alt':ImagesData['1']['alt']
+											},
+											{
+												'name':ImagesData['1']['names']['767x511'],
+												'alt':ImagesData['1']['alt']
+											},
+											{
+												'name':ImagesData['1']['names']['767x511'],
+												'alt':ImagesData['1']['alt']
+											}
+									],
+									'title':"СТИЛЬ ВОЛОС, КОТОРЫЙ ВДОХНОВЛЯЕТ",
+									'text-1':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'text-2':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'text-3':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'text-4':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'teamImg':{
+										'name':ImagesData['24']['names']['370x360'],
+										'alt':ImagesData['24']['alt'],
+									}
+								}
 							},
 							{
-								group:'space all' ,
+								group: 'hair all',
+								src:ImagesData['10']['names']['767x511'],
+								alt:ImagesData['10']['alt'],
+								overlayText: LinksData['pages']['skills--2']['name'],
+								href: LinksData['pages']['skills--2']['href'],
+								subPage: {
+									'gallary':[
+											{
+												'name':ImagesData['10']['names']['767x511'],
+												'alt':ImagesData['10']['alt']
+											},
+											{
+												'name':ImagesData['10']['names']['767x511'],
+												'alt':ImagesData['10']['alt']
+											},
+											{
+												'name':ImagesData['10']['names']['767x511'],
+												'alt':ImagesData['10']['alt']
+											}
+									],
+									'title':"СТИЛЬ ВОЛОС, КОТОРЫЙ ВДОХНОВЛЯЕТ",
+									'text-1':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'text-2':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'text-3':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'text-4':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'teamImg':{
+										'name':ImagesData['25']['names']['370x360'],
+										'alt':ImagesData['25']['alt'],
+									}
+								}
+							},
+							{
+								group: 'hair all',
+								src:ImagesData['13']['names']['767x511'],
+								alt:ImagesData['13']['alt'],
+								overlayText: LinksData['pages']['skills--3']['name'],
+								href: LinksData['pages']['skills--3']['href'],
+								subPage: {
+									'gallary':[
+											{
+												'name':ImagesData['13']['names']['767x511'],
+												'alt':ImagesData['13']['alt']
+											},
+											{
+												'name':ImagesData['13']['names']['767x511'],
+												'alt':ImagesData['13']['alt']
+											},
+											{
+												'name':ImagesData['13']['names']['767x511'],
+												'alt':ImagesData['13']['alt']
+											}
+									],
+									'title':"СТИЛЬ ВОЛОС, КОТОРЫЙ ВДОХНОВЛЯЕТ",
+									'text-1':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'text-2':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'text-3':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'text-4':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'teamImg':{
+										'name':ImagesData['25']['names']['370x360'],
+										'alt':ImagesData['25']['alt'],
+									}
+								}
+							},
+							{
+								group: 'hair all',
+								src:ImagesData['5']['names']['767x511'],
+								alt:ImagesData['5']['alt'],
+								overlayText: LinksData['pages']['skills--4']['name'],
+								href: LinksData['pages']['skills--4']['href'],
+								subPage: {
+									'gallary':[
+											{
+												'name':ImagesData['5']['names']['767x511'],
+												'alt':ImagesData['5']['alt']
+											},
+											{
+												'name':ImagesData['5']['names']['767x511'],
+												'alt':ImagesData['5']['alt']
+											},
+											{
+												'name':ImagesData['5']['names']['767x511'],
+												'alt':ImagesData['5']['alt']
+											}
+									],
+									'title':"СТИЛЬ ВОЛОС, КОТОРЫЙ ВДОХНОВЛЯЕТ",
+									'text-1':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'text-2':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'text-3':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'text-4':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'teamImg':{
+										'name':ImagesData['25']['names']['370x360'],
+										'alt':ImagesData['25']['alt'],
+									}
+								}
+							},
+							{
+								group: 'hair all',
+								src:ImagesData['17']['names']['767x511'],
+								alt:ImagesData['17']['alt'],
+								overlayText: LinksData['pages']['skills--5']['name'],
+								href: LinksData['pages']['skills--5']['href'],
+								subPage: {
+									'gallary':[
+											{
+												'name':ImagesData['17']['names']['767x511'],
+												'alt':ImagesData['17']['alt']
+											},
+											{
+												'name':ImagesData['17']['names']['767x511'],
+												'alt':ImagesData['17']['alt']
+											},
+											{
+												'name':ImagesData['17']['names']['767x511'],
+												'alt':ImagesData['17']['alt']
+											}
+									],
+									'title':"СТИЛЬ ВОЛОС, КОТОРЫЙ ВДОХНОВЛЯЕТ",
+									'text-1':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'text-2':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'text-3':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'text-4':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'teamImg':{
+										'name':ImagesData['25']['names']['370x360'],
+										'alt':ImagesData['25']['alt'],
+									}
+								}
+							},
+							{
+								group: 'hair all',
 								src:ImagesData['2']['names']['767x511'],
 								alt:ImagesData['2']['alt'],
-								overlayText:'Короткие и гламурные',
-								href:'#',
+								overlayText: LinksData['pages']['skills--6']['name'],
+								href: LinksData['pages']['skills--6']['href'],
+								subPage: {
+									'gallary':[
+											{
+												'name':ImagesData['2']['names']['767x511'],
+												'alt':ImagesData['2']['alt']
+											},
+											{
+												'name':ImagesData['2']['names']['767x511'],
+												'alt':ImagesData['2']['alt']
+											},
+											{
+												'name':ImagesData['2']['names']['767x511'],
+												'alt':ImagesData['2']['alt']
+											}
+									],
+									'title':"СТИЛЬ ВОЛОС, КОТОРЫЙ ВДОХНОВЛЯЕТ",
+									'text-1':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'text-2':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'text-3':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'text-4':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'teamImg':{
+										'name':ImagesData['25']['names']['370x360'],
+										'alt':ImagesData['25']['alt'],
+									}
+								}
 							},
 							{
-								group: 'animal all',
-								src:ImagesData['13']['names']['767x511'],
-								alt:ImagesData['13']['alt'],
-								overlayText:'Короткие и гламурные',
-								href:'#',
+								group: 'hair all',
+								src:ImagesData['18']['names']['767x511'],
+								alt:ImagesData['18']['alt'],
+								overlayText: LinksData['pages']['skills--7']['name'],
+								href: LinksData['pages']['skills--7']['href'],
+								subPage: {
+									'gallary':[
+											{
+												'name':ImagesData['18']['names']['767x511'],
+												'alt':ImagesData['18']['alt']
+											},
+											{
+												'name':ImagesData['18']['names']['767x511'],
+												'alt':ImagesData['18']['alt']
+											},
+											{
+												'name':ImagesData['18']['names']['767x511'],
+												'alt':ImagesData['18']['alt']
+											}
+									],
+									'title':"СТИЛЬ ВОЛОС, КОТОРЫЙ ВДОХНОВЛЯЕТ",
+									'text-1':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'text-2':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'text-3':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'text-4':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'teamImg':{
+										'name':ImagesData['25']['names']['370x360'],
+										'alt':ImagesData['25']['alt'],
+									}
+								}
 							},
 							{
-								group:'animal nature all',
-								src:ImagesData['10']['names']['767x511'],
-								alt:ImagesData['10']['alt'],
-								overlayText:'Короткие и гламурные',
-								href:'#',
-							},
-							{
-								group: 'space all',
-								src:ImagesData['19']['names']['767x511'],
-								alt:ImagesData['19']['alt'],
-								overlayText:'Свадебный стиль волос',
-								href:'#',
-							},
-							{
-								group:'space all',
-								src:ImagesData['5']['names']['767x511'],
-								alt:ImagesData['5']['alt'],
-								overlayText:'Свадебный стиль волос',
-								href:'#',
-							},
-							{
-								group: 'animal all',
+								group: 'cosmetology all',
 								src:ImagesData['6']['names']['767x511'],
 								alt:ImagesData['6']['alt'],
-								overlayText:'Короткие и гламурные',
-								href:'#',
+								overlayText: LinksData['pages']['skills--8']['name'],
+								href: LinksData['pages']['skills--8']['href'],
+								subPage: {
+									'gallary':[
+											{
+												'name':ImagesData['6']['names']['767x511'],
+												'alt':ImagesData['6']['alt']
+											},
+											{
+												'name':ImagesData['6']['names']['767x511'],
+												'alt':ImagesData['6']['alt']
+											},
+											{
+												'name':ImagesData['6']['names']['767x511'],
+												'alt':ImagesData['6']['alt']
+											}
+									],
+									'title':"СТИЛЬ ВОЛОС, КОТОРЫЙ ВДОХНОВЛЯЕТ",
+									'text-1':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'text-2':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'text-3':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'text-4':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'teamImg':{
+										'name':ImagesData['24']['names']['370x360'],
+										'alt':ImagesData['24']['alt'],
+									}
+								}
 							},
 							{
-								group:'animal nature all',
-								src:ImagesData['13']['names']['767x511'],
-								alt:ImagesData['13']['alt'],
-								overlayText:'Короткие и гламурные',
-								href:'#',
-							},
-							{
-								group:'nature all'  ,
-								src:ImagesData['10']['names']['767x511'],
-								alt:ImagesData['10']['alt'],
-								overlayText:'Короткие и гламурные',
-								href:'#',
-							},
-							{
-								group:'frut all',
-								src:ImagesData['17']['names']['767x511'],
-								alt:ImagesData['17']['alt'],
-								overlayText:'Короткие и гламурные',
-								href:'#',
-							},
-							{
-								group: 'space all',
-								src:ImagesData['18']['names']['767x511'],
-								alt:ImagesData['18']['alt'],
-								overlayText:'Свадебный стиль волос',
-								href:'#',
-							},
-							{
-								group:'space all' ,
+								group: 'nail all',
 								src:ImagesData['19']['names']['767x511'],
 								alt:ImagesData['19']['alt'],
-								overlayText:'Короткие и гламурные',
-								href:'#',
+								overlayText: LinksData['pages']['skills--9']['name'],
+								href: LinksData['pages']['skills--9']['href'],
+								subPage: {
+									'gallary':[
+											{
+												'name':ImagesData['19']['names']['767x511'],
+												'alt':ImagesData['19']['alt']
+											},
+											{
+												'name':ImagesData['19']['names']['767x511'],
+												'alt':ImagesData['19']['alt']
+											},
+											{
+												'name':ImagesData['19']['names']['767x511'],
+												'alt':ImagesData['19']['alt']
+											}
+									],
+									'title':"СТИЛЬ ВОЛОС, КОТОРЫЙ ВДОХНОВЛЯЕТ",
+									'text-1':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'text-2':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'text-3':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'text-4':"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin suscipit convallis facilisis. Fusce lectus ex, pretium efficitur suscipit sed, faucibus vel elit. Sed eu vestibulum leo. Phasellus at quam id elit hendrerit semper feugiat id nunc. Morbi quis justo velit. Duis semper lacus scelerisque, aliquam leo quis, porttitor leo. Etiam lobortis dapibus libero vel porttitor. Nulla tempor elit nec feugiat tempus.",
+									'teamImg':{
+										'name':ImagesData['24']['names']['370x360'],
+										'alt':ImagesData['24']['alt'],
+									}
+								}
 							},
-							{
-								group: 'animal all',
-								src:ImagesData['5']['names']['767x511'],
-								alt:ImagesData['5']['alt'],
-								overlayText:'Короткие и гламурные',
-								href:'#',
-							},
-							{
-								group:'animal nature all',
-								src:ImagesData['1']['names']['767x511'],
-								alt:ImagesData['1']['alt'],
-								overlayText:'Короткие и гламурные',
-								href:'#',
-							},
-							{
-								group:'nature all' ,
-								src:ImagesData['13']['names']['767x511'],
-								alt:ImagesData['13']['alt'],
-								overlayText:'Короткие и гламурные',
-								href:'#',
-							},
-							{
-								group:'nature all',
-								src:ImagesData['10']['names']['767x511'],
-								alt:ImagesData['10']['alt'],
-								overlayText:'Короткие и гламурные',
-								href:'#',
-							},
-							   
-							{
-								group: 'space all',
-								src:ImagesData['17']['names']['767x511'],
-								alt:ImagesData['17']['alt'],
-								overlayText:'Свадебный стиль волос',
-								href:'#',
-							},
-							{
-								group:'space all',
-								src:ImagesData['18']['names']['767x511'],
-								alt:ImagesData['18']['alt'],
-								overlayText:'Свадебный стиль волос',
-								href:'#',
-							},
-							{
-								group: 'animal all',
-								src:ImagesData['19']['names']['767x511'],
-								alt:ImagesData['19']['alt'],
-								overlayText:'Короткие и гламурные',
-								href:'#',
-							},
-							{
-								group:'animal nature all',
-								src:ImagesData['5']['names']['767x511'],
-								alt:ImagesData['5']['alt'],
-								overlayText:'Короткие и гламурные',
-								href:'#',
-							},
-							{
-								group:'nature all' ,
-								src:ImagesData['1']['names']['767x511'],
-								alt:ImagesData['1']['alt'],
-								overlayText:'Короткие и гламурные',
-								href:'#',
-							},
-							{
-								group:'frut all',
-								src:ImagesData['13']['names']['767x511'],
-								alt:ImagesData['13']['alt'],
-								overlayText:'Короткие и гламурные',
-								href:'#',
-							},
+
 						];

@@ -1,0 +1,14 @@
+extends ../Patterns/common
+
+block var
+	- var currentPage = LinksData['pages']['skills--8']['name']	
+block header
+	+TopLine
+	+Nav
+
+block main
+	+PageHeading(currentPage)
+	+Breadcrumb(currentPage)
+	+Skills(currentPage)
+block footer
+	+Footer
