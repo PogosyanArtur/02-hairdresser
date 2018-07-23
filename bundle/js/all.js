@@ -19,6 +19,7 @@ $(document).ready(function () {
     }
   });
 });
+
 $.when($.ready).then(function () {
   var $grid = $('.Gallary__items').isotope({
     // options...

@@ -1,0 +1,13 @@
+extends ../Patterns/common
+
+block var
+	- var currentPage = LinksData['pages']['Experience--1']['name']	
+block header
+	+TopLine
+	+Nav
+block main
+	+PageHeading(currentPage)
+	+Breadcrumb(currentPage)
+	//- +Experiance()
+block footer
+	+Footer
