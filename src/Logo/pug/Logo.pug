@@ -1,4 +1,5 @@
 mixin Logo(c='')
 	div(class='Logo ' + c)
-		img.Logo__img(src= "img/" + ImagesData['logo']['names']['1584x892'])(alt= ImagesData['logo']['alt'])
+		a.logo__link(href= LinksData['pages']['index']['href'])
+			img.Logo__img(src= "img/" + ImagesData['logo']['names']['383x354'])(alt= ImagesData['logo']['alt'])
 		

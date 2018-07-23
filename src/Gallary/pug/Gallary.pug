@@ -1,10 +1,10 @@
 mixin Gallary
-    section.Gallary.Container
-        ul.Gallary__filters
-            li.Gallary__filter
-                +Icons("filter",'Icons_black Icons_small')
-            each val in Portfoliofilters
-                li.Gallary__filter(data-gallary-filter= val.group)= val.name
-        .Gallary__items          
-            each val in PortfolioSlides  
-                +ImageCard(val,' Gallary__item')
+	section.Gallary.Container
+		div.Gallary__Top-Container
+			+Icons("filter",'Icons_black Icons_small')
+			ul.Gallary__filters
+				each val in Portfoliofilters
+					li.Gallary__filter(data-gallary-filter= val.group)= val.name 
+		.Gallary__items          
+			each val in PortfolioSlides  
+				+ImageCard(val,' Gallary__item')
