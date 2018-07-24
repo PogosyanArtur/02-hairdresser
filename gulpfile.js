@@ -53,9 +53,7 @@ const path = {
 
     bundle: {
         css: './bundle/css/',
-        html: { in: './bundle/',
-            out: './bundle/*.html',
-        },
+        html: './bundle/',
         js: './bundle/js/',
         svg: './bundle/img/',
         video: './bundle/video/*.*',
@@ -65,12 +63,23 @@ const path = {
 
     // dist
     dist: {
-        css: "./dist/css",
-        js: "./dist/js",
-        img: "./dist/img",
-        fonts: "./dist/fonts",
-        video: "./dist/video",
-        html: "./dist/",
+        from:{
+            css: "./bundle/css/*.css",
+            js: "./bundle/js/*.js",
+            img: "./bundle/img/*.*",
+            fonts: "./bundle/fonts/*.*",
+            video: "./bundle/video/*.*",
+            html: './bundle/*.html',
+        },
+        to:{
+            css: "./dist/css/",
+            js: "./dist/js/",
+            img: "./dist/img",
+            fonts: "./dist/fonts",
+            video: "./dist/video",
+            html: "./dist/",
+        }
+
     },
     // watch
     watch: {
@@ -101,18 +110,18 @@ gulp.task('bundle:pug', function () {
         .pipe(pug({
             pretty: true
         }))
-        .pipe(gulp.dest(path.bundle.html.in))
+        .pipe(gulp.dest(path.bundle.html))
         .pipe(browserSync.stream())
 });
 
 // build html
 
 gulp.task('build:html', function () {
-    return gulp.src(path.bundle.html.out)
+    return gulp.src(path.dist.from.html)
         .pipe(htmlmin({
             collapseWhitespace: true
         }))
-        .pipe(gulp.dest(path.dist.html));
+        .pipe(gulp.dest(path.dist.to.html));
 });
 
 
@@ -134,24 +143,19 @@ gulp.task('bundle:css', function () {
     return gulp.src(path.src.styl)
         .pipe(plumber())
         .pipe(stylus())
-        .pipe(csso({
-            restructure: true,
-            sourceMap: true,
-            debug: true
-        }))
         .pipe(gulp.dest(path.bundle.css))
         .pipe(browserSync.stream())
 });
 
 // bulid CSS
 gulp.task('build:css', function () {
-    gulp.src(path.bundle.css)
+    gulp.src(path.dist.from.css)
         .pipe(autoprefixer({
             browsers: ['last 4 versions'],
             cascade: false
         }))
-        .pipe(cssnano())
-        .pipe(gulp.dest(path.dist.css))
+        .pipe(csso())
+        .pipe(gulp.dest(path.dist.to.css))
 });
 
 ////////////////////////
@@ -184,9 +188,9 @@ gulp.task('bundle:js', function () {
 // bulid js
 gulp.task('build:js', function (cb) {
     pump([
-            gulp.src(path.bundle.js.out),
+            gulp.src(path.dist.from.js),
             uglify(),
-            gulp.dest(path.dist.js)
+            gulp.dest(path.dist.to.js)
         ],
         cb
     );
@@ -213,17 +217,17 @@ gulp.task('svg', function () {
         .pipe(gulp.dest(path.bundle.svg));
 });
 
-// remove video
+// build video
 gulp.task('build:video', function () {
-    gulp.src(path.bundle.video)
-        .pipe(gulp.dest(path.dist.video))
+    gulp.src(path.dist.from.video)
+        .pipe(gulp.dest(path.dist.to.video))
 });
 
 // build image
 gulp.task('build:img', function () {
-    gulp.src(path.bundle.img)
+    gulp.src(path.dist.from.img)
         .pipe(imagemin())
-        .pipe(gulp.dest(path.dist.img))
+        .pipe(gulp.dest(path.dist.to.img))
 });
 
 ////////////////////////
@@ -232,8 +236,8 @@ gulp.task('build:img', function () {
 
 // remove fonts
 gulp.task('build:fonts', function () {
-    gulp.src(path.bundle.fonts)
-        .pipe(gulp.dest(path.dist.fonts))
+    gulp.src(path.dist.from.fonts)
+        .pipe(gulp.dest(path.dist.to.fonts))
 });
 
 ////////////////////////
