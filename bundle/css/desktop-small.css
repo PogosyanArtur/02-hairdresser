@@ -196,6 +196,10 @@ body {
   flex-direction: column;
   justify-content: space-around;
 }
+.Card__link {
+  text-decoration: none;
+  display: block;
+}
 .Card__imgBox {
   overflow: hidden;
 }
@@ -209,6 +213,7 @@ body {
   font-size: 1.9rem;
   font-weight: 400;
   letter-spacing: 1px;
+  color: #000;
 }
 .Card__text {
   color: #929292;

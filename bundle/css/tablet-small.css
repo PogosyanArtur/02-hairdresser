@@ -65,7 +65,7 @@
 }
 .Nav__menu {
   position: absolute;
-  display: block;
+  display: none;
   background-color: #000;
   padding: 2rem;
   width: 100%;

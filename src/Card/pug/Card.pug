@@ -1,8 +1,9 @@
 mixin Card(x)
-	.Card
-		div.Card__imgBox
-			img.Card__img(src=x.src alt=x.alt)
-		h3.Card__title= x.title
-		p.Card__text= x.text
-		div.Card__btnBox
-			+btn('Узнать больше','Card__btn btn_light',x.href)
+	a.Card__link(href=x.href)
+		.Card
+			div.Card__imgBox
+				img.Card__img(src=x.src alt=x.alt)
+			h3.Card__title= x.title
+			p.Card__text= x.text
+			div.Card__btnBox
+				+btn('Узнать больше','Card__btn btn_light',x.href)

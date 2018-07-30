@@ -90,7 +90,7 @@ const path = {
         lib: "./src/Bundle/lib.*"
     },
     // serever
-    server: "./bundle",
+    server: "./dist",
 }
 
 ////////////////////////
