@@ -152,6 +152,10 @@
   font-size: 1.4rem;
 }
 .Service-Banner {
+  display: flex;
+  justify-content: space-between;
+}
+.Service-Banner__itemContainer {
   display: block;
 }
 .Service-Content {

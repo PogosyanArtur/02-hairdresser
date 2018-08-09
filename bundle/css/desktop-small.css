@@ -879,8 +879,6 @@ will-change scroll-position,
 }
 .Service-Banner {
   padding: 3rem 0;
-  display: flex;
-  justify-content: space-between;
 }
 .Service-Banner__itemContainer {
   display: flex;

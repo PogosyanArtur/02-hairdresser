@@ -71,6 +71,7 @@
 }
 .Service-Banner {
   padding: 3rem 0;
+  display: block;
 }
 .Service-Banner__itemContainer {
   display: block;
