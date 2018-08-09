@@ -1,16 +1,1 @@
-.Banner__imgBox {
-  right: -40rem;
-}
-.Banner__content {
-  position: absolute;
-  left: 5%;
-}
-.Container {
-  width: 96rem;
-}
-.Nav__container {
-  width: 96rem;
-}
-.Poster__text {
-  font-size: 2.1rem;
-}
+.Banner__imgBox{right:-40rem}.Banner__content{position:absolute;left:5%}.Container,.Nav__container{width:96rem}.Poster__text{font-size:2.1rem}
