@@ -1,0 +1,12 @@
+extends ../Patterns/common
+block var
+	- let currentPage = "Солярий"
+	- let currentSubPage = "Солярий"
+	- let currentSubPageBg = "Panel_view_solarium"
+block header
+	+TopLine
+	+Panel(currentPage)
+block main
+	+Service-Content--Services(ServiceContentData['solarium'])
+block footer
+	+Footer

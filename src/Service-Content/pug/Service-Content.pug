@@ -9,6 +9,9 @@ mixin Service-Content--All
 			.Service-Content__Row
 				+Card(ServiceBannerData[2])
 				+Card(ServiceBannerData[3])
+			.Service-Content__Row
+				+Card(ServiceBannerData[4])
+				+Card(ServiceBannerData[5])
 
 mixin Service-Content--Services(x)
 	section.Service-Content.Container
@@ -21,11 +24,11 @@ mixin Service-Content--Services(x)
 					img.Service-Content__Img(src="img/"+ x.img2)(alt= x.alt2)
 					img.Service-Content__Img(src="img/"+ x.img3)(alt= x.alt3)
 			.Service-Content__Row
-				.Service-Content__Column
+				.Service-Content__Column.Service-Content__Column_start
 					h2.Service-Content__Title= x.Title1
 					p.Service-Content__Text= x.Text1 
 					p.Service-Content__Text= x.Text2 
-				.Service-Content__Column
+				.Service-Content__Column.Service-Content__Column_start
 					h2.Service-Content__Title= x.Title2
 					p.Service-Content__Text= x.Text3 
 					p.Service-Content__Text= x.Text4

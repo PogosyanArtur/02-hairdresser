@@ -1,0 +1,12 @@
+extends ../Patterns/common
+block var
+	- let currentPage = "Массаж"
+	- let currentSubPage = "Массаж"
+	- let currentSubPageBg = "Panel_view_massage"
+block header
+	+TopLine
+	+Panel(currentPage)
+block main
+	+Service-Content--Services(ServiceContentData['massage'])
+block footer
+	+Footer
