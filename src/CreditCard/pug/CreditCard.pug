@@ -1,0 +1,7 @@
+include CreditCardData
+
+mixin CreditCard
+	ul.CreditCards
+		each CreditCard in CreditCardsData
+			li.CreditCards__Item
+				+Icons(CreditCard,'Icons_size_medium')

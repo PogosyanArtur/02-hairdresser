@@ -1,0 +1,9 @@
+include BrandsData
+
+
+mixin Brands
+	ul.Brands
+		each Brand in BrandsData
+			li.Brands__Item
+				a.Brands__Link(href=Brand.href target="_blank")
+					+Icons(Brand.src,'Icons_size_large')
