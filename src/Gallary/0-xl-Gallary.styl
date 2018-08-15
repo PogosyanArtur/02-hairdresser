@@ -1,0 +1,41 @@
+.Gallary
+	&__Top-Container
+		text-align: center
+		padding: 4rem 0
+	&__items
+		margin: 0 auto
+		&::after
+			content: ""
+			display block
+			clear: both
+
+	&__item
+		width: 33%
+		
+	&__filters
+		list-style: none
+		display inline-block
+		text-align: center
+		
+	&__filter
+		display inline-block
+
+		padding: 1rem
+
+		color $c_black
+		font-size 1.4rem
+		cursor pointer
+		
+	&__filter:hover,
+	&__filter:focus,
+	&__filter_active
+		color $c_main
+	&__filter:not(:first-child)
+		cursor pointer
+	&__filter:not(:first-child) +.Gallary__filter::before
+		content: "/"
+		color $c_black
+		margin-right 1rem
+	&__filter-icon
+		fill $c_black
+

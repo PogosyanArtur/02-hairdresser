@@ -1,0 +1,55 @@
+.Footer
+	background-color $c_black_4
+	&__top
+		display flex
+		justify-content space-between
+		padding: 7rem 0
+	&__card
+		font-family $ff_0
+		letter-spacing: 1px
+		font-weight 300
+	&__content
+		list-style none
+		color $c_black_2
+		font-size 1.4rem
+	&__title
+		text-transform: uppercase
+		font-size 1.7rem    
+		color: $c_white 
+		padding-bottom: 2rem
+	&__text
+		margin-left 1rem
+	&__item
+		display flex
+		justify-content space-between
+		text-transform: capitalize
+		padding-top: 0.8rem
+		padding-bottom: 0.8rem
+		color $c_black_2
+		font-size 1.4rem
+	&__item_toRight
+		padding-left:2rem 
+	&__item_light
+		padding-right: 3rem 
+		color $c_white
+	&__item_close
+		color $c_main
+
+	&__bottom
+		text-align: center
+		font-size 1.4rem
+		padding: 3rem 2rem
+		background-color $c_black_5
+		color $c_black_2
+	&__link
+		display flex
+		align-items: center
+		text-decoration: none
+		color inherit
+		cursor pointer
+		&:focus,
+		&:focus svg,
+		&:hover,
+		&:hover svg
+			color $c_main
+			fill $c_main

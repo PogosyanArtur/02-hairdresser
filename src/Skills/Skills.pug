@@ -1,0 +1,21 @@
+mixin Skills(currentPage)
+	section.Skills.Container
+		each item in PortfolioSlides
+			if item.overlayText=== currentPage
+				div.Skills__Gallary
+					each img in item.subPage.gallary
+						img.Skills__Img(src="img/"+img.name)(alt= img.alt)
+				main.Skills__Content
+					h2.Skills__Title= item.subPage.title
+					p.Skills__Text= item.subPage['text-1']
+					p.Skills__Text= item.subPage['text-2']
+					p.Skills__Text= item.subPage['text-3']
+					h2.Skills__Title ПРОФЕССИОНАЛЬНАЯ КОМАНДА
+					img.Skills__TeamImg(src="img/"+item.subPage.teamImg.name)(alt= item.subPage.teamImg.alt)
+					p.Skills__Text= item.subPage['text-4']
+
+
+
+
+
+

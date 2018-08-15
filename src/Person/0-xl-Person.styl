@@ -1,0 +1,46 @@
+
+.Person
+	width: 33%
+	margin: 0 2rem
+	padding: 1.5rem 0
+	border-bottom 1px solid $c_black_3
+	&:hover &__img
+		transform: translateY(-6rem)
+	&:hover &__text
+		bottom: 0%
+	&__Container
+		width 100%
+		overflow hidden
+		position relative
+	&__img
+		max-width 100%
+		width:  100%
+		display block
+		transition:  0.4s
+	&__text
+		font-size 1.4rem
+		color: $c_black_2
+		font-style italic
+		padding: 1.5rem 1.5rem
+		line-height 1.5
+		transition: all 0.4s
+		position absolute
+		bottom -50%
+		background-color: $c_white
+	&__Content
+		text-align: center
+		letter-spacing: 1px
+	&__title
+		font-size 1.7rem
+		font-weight 700
+		color: $c_black
+		padding: 2rem 0 1rem 0
+		text-transform: capitalize
+		letter-spacing: inherit
+	&__caption
+		font-size 1.4rem
+		font-weight 300
+		color: $c_black_2
+		letter-spacing: inherit
+
+

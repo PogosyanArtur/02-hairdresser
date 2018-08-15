@@ -1,0 +1,95 @@
+.Nav 
+	background-color: $c_white
+	will-change scroll-position
+	&_view_ghost
+		background-color: transparent
+	&_sticky
+		position fixed
+		top 0
+		width 100%
+		z-index: 150
+		background-color: $c_white
+	&__container
+		width: 114rem
+		margin: 0 auto
+		display flex
+		align-items center
+		justify-content space-between
+		z-index 200
+	&__box
+		display flex
+		align-items center
+		justify-content space-between
+	&__btnBox
+		display none
+		padding-right 2rem
+	&__btn 
+		border none
+		outline none
+		background-color $c_main
+		padding 0.4rem 0.4rem 0.2rem 0.4rem
+		border-radius 5px
+		cursor pointer
+	&__menu
+		display flex
+		justify-content space-between
+	&__item
+		//style
+		text-decoration none
+		border none
+		outline none
+		font-family $ff_0
+		color $c_black
+		font-weight 400
+		font-size 1.4rem
+		letter-spacing 1px
+		background-color inherit
+		text-transform uppercase
+		white-space nowrap
+		cursor pointer
+		transition 0.2s ease
+		//layout
+		display inline-block
+		padding 0.7rem 2.5rem
+		&:hover,
+		&:active,
+		&:hover .Nav__subBtnIcon,
+		&_active
+			color $c_main
+			fill $c_main    
+	&__sub
+		position relative
+
+	&__subBtn
+		padding 0.7rem 2.5rem 0.7rem 3.5rem
+		display flex
+		justify-items center
+		position relative
+	&__subBtnIcon
+		width 1.7rem
+		height 1.7rem
+		position absolute
+		top 5px
+		right 0
+		opacity 0
+	&__subBtnIcon_active
+		opacity 1
+	&__subContent
+		display none
+		position absolute
+		top 3rem
+		padding 1rem 0 0 1.5rem
+		z-index 3
+	&__subItem
+		padding-left 2rem
+		display block
+	&__subLink
+		display block
+		padding 1rem 5rem 1rem 2rem
+		background-color $c_white
+		&_active,
+		&:hover,
+		&:active
+			background-color $c_main_1
+			color $c_white
+

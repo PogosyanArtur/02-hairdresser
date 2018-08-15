@@ -1,0 +1,33 @@
+.btn
+    display: inline-block
+    text-decoration: none
+    background-color: transparent
+    border-color: transparent
+    border-radius: 5px      
+    color: $c_white
+    font-size 1.8rem
+    font-weight 300
+    padding: 1rem 1.5rem
+    text-align: center
+    cursor: pointer
+    letter-spacing: 1px
+    transition: 0.3s
+    &_light
+        color: $c_main_1
+        font-style: italic
+        &:hover
+            color: $c_main_2
+    &_line
+        color: $c_main_3
+        border-radius: 4px    
+        border 2px solid transparent
+        &_active,
+        &:focus,
+        &:hover
+            border 2px solid $c_main_3
+
+    &_accent
+        background-color: $c_main
+        &:hover
+            background-color: $c_main_3
+

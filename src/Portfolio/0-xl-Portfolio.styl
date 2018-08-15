@@ -1,0 +1,83 @@
+.Portfolio
+    background-color: $c_main_2
+    padding: 2rem 0
+
+    &__header
+        display flex
+        justify-content space-between
+        align-items: center
+        padding: 2rem 0
+
+    &__title
+        color: $c_white
+        font-weight 300
+        font-family $ff_0
+        font-size 2.8rem
+
+    &__filters
+        text-align: center
+    &__filter
+        list-style none
+        display inline-block
+        padding: 1rem 
+        cursor pointer
+
+    &__filterText
+        color: $c_black_2
+        display inline-block
+        font-family $ff_0
+        font-weight: 300
+
+    &__filter:hover &__filterText,
+    &__filter_active &__filterText
+        color: $c_white
+
+    &__filterIconBox
+        display none
+            
+    &__filterIcon
+        fill $c_black_2
+        height 2.5rem
+        width 2.5rem
+
+    &__filter_active &__filterIcon,
+    &__filter:hover &__filterIcon
+        fill $c_white
+
+    &__navBox
+        position relative
+        padding: 4rem 0 2rem 0;
+        display flex
+        justify-content center
+
+    &__arrow
+        border-radius: 5px
+        border: 1px solid $c_white
+        background-color: transparent
+        display: inline-block
+        padding: 1rem
+        cursor pointer
+        transition: 0.3s
+
+    &__arrow + &__arrow
+        margin-left: 0.5rem 
+
+    &__arrow:hover        
+        color: $c_white
+        border-color: $c_white
+        overflow hidden
+    &__arrowIcon
+        height 1.8rem
+        width 1.8rem
+        transform: rotate(-90deg)
+        fill $c_white
+        transition: 0.3s
+
+    &__arrowNext:hover &__arrowIcon
+        fill: $c_white
+        transform:rotate(-90deg) translateY(3px)
+
+    &__arrowPrev:hover &__arrowIcon
+        fill: $c_white
+        transform:rotate(-90deg) translateY(-3px)
+

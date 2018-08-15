@@ -1,0 +1,55 @@
+.Price
+    &__filters
+        list-style none
+        text-align: center
+        margin-top: 3rem
+    &__filter
+        display: inline-block
+        margin: 5px 0
+    &__filter + &__filter
+        margin-left:2rem
+    &__container
+        width: 80%
+        margin:  2rem auto
+    &__section:not(:first-child)
+        display: none
+    &__item
+        font-family $ff_0
+        color $c_main
+        font-weight 700
+        margin: 1rem
+        letter-spacing: 1px
+        background-color $c_white
+        display flex
+        justify-content: space-between
+        align-items: center
+        cursor pointer
+    &__subItems
+        list-style: none
+        display block
+    &__subItem
+        font-family $ff_0
+        color $c_black_2
+        font-style: italic
+        padding: 1rem 3rem 1rem 5rem
+        letter-spacing: 1px
+        display flex
+        justify-content space-between
+    &__subItemTitle
+        font-weight 300
+        white-space: normal
+        padding-right: 1rem
+        flex-grow: 0
+    &__subItemDivider
+        border-bottom 1px dashed $c_main
+        flex-grow: 1
+    &__subItemPrice
+        white-space: nowrap
+        padding-left: 1rem
+        flex-grow: 0
+
+
+
+
+
+
